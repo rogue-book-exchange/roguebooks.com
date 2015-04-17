@@ -1,4 +1,4 @@
-# Welcome!!!  -  Rogue Book Exchange Team!  Professor Bagwell is just so awesome!
+# Welcome!!!  -  Rogue Book Exchange Team!  Professor Bagwell is just not bad (but probably actually pretty awesome)!
 # 
 > From here down, until specified otherwise, will be instructions on how to interact to the GitHub repo for our Rogue Book Exchange web project
 
