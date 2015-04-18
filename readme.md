@@ -1,5 +1,5 @@
-# Welcome!!!  -  Rogue Book Exchange Team! (Team members: Jules Rogmans, Tina)
-# 
+# Welcome!!!  -  Rogue Book Exchange Team!
+#
 > From here down, until specified otherwise, will be instructions on how to interact to the GitHub repo for our Rogue Book Exchange web project
 
 ## Let's talk basics
