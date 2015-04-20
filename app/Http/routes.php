@@ -14,8 +14,6 @@
 Route::get('/', 'PagesController@index');
 Route::get('/{page_uri?}', 'PagesController@show');
 
-Route::get('contact', 'PagesController@contact');
-
 // Route::controllers([
 // 	'auth' => 'Auth\AuthController',
 // 	'password' => 'Auth\PasswordController',
