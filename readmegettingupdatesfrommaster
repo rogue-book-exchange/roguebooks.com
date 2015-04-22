@@ -1,0 +1,19 @@
+I forked a GitHub repo roguecommunitycollegewebdevelopers/roguebookexchange.git to bagjsr/roguebookexchange.git and want to keep it updated.
+Track
++
+
+After I forked the repo to your Github account, I did this one time:
++
+
+git clone git@github.com:roguecommunitycollegewebdevelopers/roguebookexchange.git
+cd roguebookexchange
+git remote add upstream git@github.com:roguecommunitycollegewebdevelopers/roguebookexchange.git
+
+Update
++
+
+Each time I want to update, from my local master branch:
++
+
+git fetch upstream
+git rebase upstream/master
