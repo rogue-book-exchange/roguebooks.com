@@ -20,10 +20,6 @@ class PagesController extends Controller {
 		{
 			$block = array();
 	    $contents = Page::where('page_uri', '=', $page_uri)->orderBy('group_id')->get();
-	    // foreach ($contents as $content) {
-	    // 	array_push($block, $content);
-	    // }
-	    // return var_dump($contents);
 			return view('pages.' . $page_uri, compact('contents'));
 		} else {
 			return redirect('/');
