@@ -6,7 +6,7 @@
 
 @section('content')
 	<div class="row">
-		<h1>{{ $contents[0]->heading1 }}</h1>
+		<h1>{{ $contents[2]->body }}</h1>
 		<!-- @foreach ($contents as $content)
 			@if ($content->group_id == 1)
 					<div class="col-sm-4">
