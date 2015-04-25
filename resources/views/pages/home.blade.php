@@ -6,22 +6,40 @@ Home Page
 
 @section('content')
   <div class="row">
-    <div class="col-sm-5">
-      
-    </div>
     <div class="col-sm-7">
-      <div class="row">
+      <div class="row visible-xs">
         <div class="col-sm-6 text-center">
           <!-- Content from database -->
           <p>We always have books waiting to be shelved. Sign up to <b>Volunteer Today!</b></p>
-          <a href="#" class="btn btn-success green-gradient">Volunteer</a>
+          <a href="#" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
+          <!-- end content from database -->
+        </div>
+        <br>
+        <div class="col-sm-6 text-center">
+          <!-- Content from database -->
+          <p>As always, all donations are tax deductible!</p>
+          <a href="#" class="btn btn-success yellow-white-gradient full-width">Donate</a>
+          <!-- end content from database -->
+        </div>
+      </div>
+      <div class="row hidden-xs">
+        <div class="col-sm-6 text-center">
+          <!-- Content from database -->
+          <p>We always have books waiting to be shelved. Sign up to <b>Volunteer Today!</b></p>
           <!-- end content from database -->
         </div>
         <div class="col-sm-6 text-center">
           <!-- Content from database -->
           <p>As always, all donations are tax deductible!</p>
-          <a href="#" class="btn btn-success green-gradient">Donate</a>
           <!-- end content from database -->
+        </div>
+      </div>
+      <div class="row hidden-xs">
+        <div class="col-sm-6 text-center">
+          <a href="#" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
+        </div>
+        <div class="col-sm-6 text-center">
+          <a href="#" class="btn btn-success yellow-white-gradient full-width">Donate</a>
         </div>
       </div>
       <br>
@@ -31,9 +49,9 @@ Home Page
         </div>
       </div>
       <br>
-      <div class="panel panel-default" id="homepage_panel">
-        <div class="panel-body">
-          <h3>Hours: 10am-3pm Wednesday-Saturday</h3>
+      <div class="panel panel-success" id="homepage-panel">
+        <div class="panel-body text-center">
+          <h3>Open 10am-3pm Wednesday-Saturday</h3>
           <p>Donations can be left in the shed across the parking lot any time. Larger donations will be accepted by appointment</p>
         </div>
       </div>
@@ -54,6 +72,42 @@ Home Page
             </li>
           </ul>
 
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="panel panel-success">
+        <div class="panel-heading-border">
+          <div class="panel-heading green-white-gradient">
+            <div class="panel-title text-center">
+              <h2>Our Wish List</h2>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+            <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+            <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+            <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading-border">
+          <div class="panel-heading green-white-gradient">
+            <div class="panel-title text-center">
+              <h2>Whats new on our Amazon</h2>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li>Morbi in sem quis dui placerat ornare.</li>
+            <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</li>
+            <li>Phasellus ultrices nulla quis nibh.</li>
+            <li>Pellentesque fermentum dolor. </li>
+          </ul>
         </div>
       </div>
     </div>

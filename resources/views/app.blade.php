@@ -24,7 +24,7 @@
 	<div class="wide">
 		<img src="{{ asset('/images/rogue-book-exchange-header-image.png') }}">
 	</div>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default green-white-gradient">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav">
@@ -36,12 +36,12 @@
 
 			</div>
 			<div class="collapse navbar-collapse" id="mainNav">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="navbar-item" href="#">Home</a></li>
-					<li><a class="navbar-item" href="#">About Us</a></li>
-					<li><a class="navbar-item" href="#">Gallery</a></li>
-					<li><a class="navbar-item" href="#">Service</a></li>
-					<li><a class="navbar-item" href="#">Contact</a></li>
+				<ul class="nav navbar-nav main-nav">
+					<li class="navbar-item"><a href="#">Home</a></li>
+					<li class="navbar-item"><a href="#">FAQ</a></li>
+					<li class="navbar-item"><a href="#">Volunteer</a></li>
+					<li class="navbar-item"><a href="#">Support</a></li>
+					<li class="navbar-item"><a href="#">Contact</a></li>
 				</ul>
 			</div>
 
@@ -51,6 +51,25 @@
 	<div class="container">
 		
 		@yield('content')
+	</div>
+	
+	<br>
+	<div class="container container-full brown-border-top">
+		<div class="row green-white-gradient">
+			<div class="col-sm-12">
+				<span class="pull-right">
+					<ul class="hidden-xs">
+						<li class="footer-nav"><a href="#">Home</a></li>
+						<li class="footer-nav"><a href="#">FAQ</a></li>
+						<li class="footer-nav"><a href="#">Volunteer</a></li>
+						<li class="footer-nav"><a href="#">Support</a></li>
+						<li class="footer-nav"><a href="#">Contact</a></li>
+					</ul>
+					<br>
+					<p>roguebookexchange@gmail.com  |  110 N Ivy St, Medford, OR 97501  |  541-779-1326</p>
+				</span>
+			</div>
+		</div>
 	</div>
 
 	<!-- Scripts -->
