@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18493",
+"creatorBuild": "18892",
 "files": {
 	"\/app\/Commands\/Command.php": {
 		"fileType": 8192,
@@ -245,6 +245,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/config\/app.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -409,6 +420,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/public\/css\/app.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -417,6 +439,26 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/public\/css\/calendar.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/css\/calendar.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/images\/rogue-book-exchange-header-image.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 241741,
+		"inputAbbreviatedPath": "\/public\/images\/rogue-book-exchange-header-image.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/rogue-book-exchange-header-image.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/public\/images\/rogue-book-exchange-header-image.png": {
 		"fileType": 32768,
@@ -449,17 +491,48 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/js\/app.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/public\/js\/app.js",
+		"outputAbbreviatedPath": "\/public\/js\/min\/app-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/public\/js\/min\/app-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/js\/min\/app-min.js",
+		"outputAbbreviatedPath": "\/public\/js\/min\/min\/app-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/readme.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/readme.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/readme.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/readmeassets\/changedirectory.png": {
 		"fileType": 32768,
@@ -2110,11 +2183,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/resources\/views\/pages\/calendar.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources\/views\/pages\/calendar.blade.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/resources\/views\/pages\/contact.blade.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/resources\/views\/pages\/contact.blade.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/resources\/views\/pages\/faq.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources\/views\/pages\/faq.blade.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2172,6 +2263,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/classpreloader\/classpreloader\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/classpreloader\/classpreloader\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/classpreloader\/classpreloader\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/classpreloader\/classpreloader\/src\/Application.php": {
 		"fileType": 8192,
@@ -2335,29 +2437,69 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/composer\/installed.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/composer\/installed.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/composer\/installed-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/danielstjules\/stringy\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/danielstjules\/stringy\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/danielstjules\/stringy\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/danielstjules\/stringy\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/danielstjules\/stringy\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/danielstjules\/stringy\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/danielstjules\/stringy\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/danielstjules\/stringy\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/danielstjules\/stringy\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/danielstjules\/stringy\/src\/Create.php": {
 		"fileType": 8192,
@@ -2422,17 +2564,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/dnoegel\/php-xdg-base-dir\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/dnoegel\/php-xdg-base-dir\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/dnoegel\/php-xdg-base-dir\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/dnoegel\/php-xdg-base-dir\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/dnoegel\/php-xdg-base-dir\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/dnoegel\/php-xdg-base-dir\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/dnoegel\/php-xdg-base-dir\/src\/Xdg.php": {
 		"fileType": 8192,
@@ -2452,6 +2614,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/doctrine\/inflector\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/doctrine\/inflector\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/doctrine\/inflector\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/doctrine\/inflector\/lib\/Doctrine\/Common\/Inflector\/Inflector.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2462,16 +2635,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/doctrine\/inflector\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/doctrine\/inflector\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/doctrine\/inflector\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/doctrine\/inflector\/tests\/Doctrine\/Tests\/Common\/Inflector\/InflectorTest.php": {
 		"fileType": 8192,
@@ -2500,29 +2682,58 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/doctrine\/instantiator\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/doctrine\/instantiator\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/doctrine\/instantiator\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/doctrine\/instantiator\/CONTRIBUTING.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/doctrine\/instantiator\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/doctrine\/instantiator\/CONTRIBUTING.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/doctrine\/instantiator\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/doctrine\/instantiator\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/doctrine\/instantiator\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/doctrine\/instantiator\/src\/Doctrine\/Instantiator\/Exception\/ExceptionInterface.php": {
 		"fileType": 8192,
@@ -2704,6 +2915,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/illuminate\/html\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/illuminate\/html\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/illuminate\/html\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/illuminate\/html\/FormBuilder.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2758,6 +2980,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/ircmaxell\/password-compat\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ircmaxell\/password-compat\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ircmaxell\/password-compat\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/ircmaxell\/password-compat\/lib\/password.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2768,16 +3001,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/ircmaxell\/password-compat\/LICENSE.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/ircmaxell\/password-compat\/LICENSE.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/ircmaxell\/password-compat\/LICENSE.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/ircmaxell\/password-compat\/version-test.php": {
 		"fileType": 8192,
@@ -2787,6 +3029,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/jakub-onderka\/php-console-color\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jakub-onderka\/php-console-color\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/jakub-onderka\/php-console-color\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/jakub-onderka\/php-console-color\/example.php": {
 		"fileType": 8192,
@@ -2833,6 +3086,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/jakub-onderka\/php-console-highlighter\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jakub-onderka\/php-console-highlighter\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/jakub-onderka\/php-console-highlighter\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/jakub-onderka\/php-console-highlighter\/examples\/snippet.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2861,16 +3125,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/jakub-onderka\/php-console-highlighter\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/jakub-onderka\/php-console-highlighter\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/jakub-onderka\/php-console-highlighter\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/jakub-onderka\/php-console-highlighter\/src\/JakubOnderka\/PhpConsoleHighlighter\/Highlighter.php": {
 		"fileType": 8192,
@@ -2899,17 +3172,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/jeremeamia\/SuperClosure\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jeremeamia\/SuperClosure\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/jeremeamia\/SuperClosure\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/jeremeamia\/SuperClosure\/LICENSE.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/jeremeamia\/SuperClosure\/LICENSE.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/jeremeamia\/SuperClosure\/LICENSE.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/jeremeamia\/SuperClosure\/src\/Analyzer\/AstAnalyzer.php": {
 		"fileType": 8192,
@@ -3037,29 +3330,58 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/CONTRIBUTING.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/CONTRIBUTING.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/laravel\/framework\/readme.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/readme.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/readme.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/Authenticatable.php": {
 		"fileType": 8192,
@@ -3087,6 +3409,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/Console\/ClearResetsCommand.php": {
 		"fileType": 8192,
@@ -3205,6 +3538,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Bus\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Bus\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Bus\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Bus\/Dispatcher.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -3267,6 +3611,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Cache\/Console\/CacheTableCommand.php": {
 		"fileType": 8192,
@@ -3403,6 +3758,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Config\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Config\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Config\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Config\/Repository.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -3438,6 +3804,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/ConfirmableTrait.php": {
 		"fileType": 8192,
@@ -3510,6 +3887,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php": {
 		"fileType": 8192,
@@ -3645,6 +4033,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Contracts\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Contracts\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Contracts\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Contracts\/Config\/Repository.php": {
 		"fileType": 8192,
@@ -4132,6 +4531,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Cookie\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cookie\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Cookie\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Cookie\/CookieJar.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4176,6 +4586,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php": {
 		"fileType": 8192,
@@ -4790,16 +5211,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Schema\/Blueprint.php": {
 		"fileType": 8192,
@@ -4909,6 +5339,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Encryption\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Encryption\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Encryption\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Encryption\/Encrypter.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4945,6 +5386,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Events\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Events\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Events\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Events\/Dispatcher.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4971,6 +5423,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php": {
 		"fileType": 8192,
@@ -5602,6 +6065,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Hashing\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Hashing\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Hashing\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Hashing\/HashServiceProvider.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -5610,6 +6084,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/Exception\/HttpResponseException.php": {
 		"fileType": 8192,
@@ -5674,6 +6159,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Log\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Log\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Log\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Log\/Writer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -5682,6 +6178,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Mail\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Mail\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Mail\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Mail\/Mailer.php": {
 		"fileType": 8192,
@@ -5782,6 +6289,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/LengthAwarePaginator.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -5836,6 +6354,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Hub.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -5889,6 +6418,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Queue\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Queue\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Queue\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Queue\/Connectors\/BeanstalkdConnector.php": {
 		"fileType": 8192,
@@ -6224,16 +6764,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Queue\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Queue\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Queue\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Queue\/RedisQueue.php": {
 		"fileType": 8192,
@@ -6280,6 +6829,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Redis\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Redis\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Redis\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Redis\/Database.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -6297,6 +6857,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Console\/ControllerMakeCommand.php": {
 		"fileType": 8192,
@@ -6505,6 +7076,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Session\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Session\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Session\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Session\/Console\/SessionTableCommand.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -6648,6 +7230,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/Debug\/Dumper.php": {
 		"fileType": 8192,
@@ -7045,6 +7638,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Translation\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Translation\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Translation\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Translation\/FileLoader.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -7080,6 +7684,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/Validation\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Validation\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/Validation\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/Validation\/DatabasePresenceVerifier.php": {
 		"fileType": 8192,
@@ -7161,6 +7776,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/View\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/laravel\/framework\/src\/Illuminate\/View\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php": {
 		"fileType": 8192,
@@ -7260,6 +7886,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/league\/flysystem\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/league\/flysystem\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/league\/flysystem\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/league\/flysystem\/src\/Adapter\/AbstractAdapter.php": {
 		"fileType": 8192,
@@ -7576,41 +8213,79 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/monolog\/monolog\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/monolog\/monolog\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/monolog\/monolog\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/monolog\/monolog\/doc\/extending.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/monolog\/monolog\/doc\/extending.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/monolog\/monolog\/doc\/extending.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/monolog\/monolog\/doc\/sockets.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/monolog\/monolog\/doc\/sockets.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/monolog\/monolog\/doc\/sockets.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/monolog\/monolog\/doc\/usage.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/monolog\/monolog\/doc\/usage.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/monolog\/monolog\/doc\/usage.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/monolog\/monolog\/src\/Monolog\/ErrorHandler.php": {
 		"fileType": 8192,
@@ -8953,17 +9628,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/mtdowling\/cron-expression\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/mtdowling\/cron-expression\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/mtdowling\/cron-expression\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/mtdowling\/cron-expression\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/mtdowling\/cron-expression\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/mtdowling\/cron-expression\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/mtdowling\/cron-expression\/src\/Cron\/AbstractField.php": {
 		"fileType": 8192,
@@ -9136,17 +9831,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/nesbot\/carbon\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/nesbot\/carbon\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/nesbot\/carbon\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/nesbot\/carbon\/readme.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/nesbot\/carbon\/readme.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/nesbot\/carbon\/readme.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/nesbot\/carbon\/src\/Carbon\/Carbon.php": {
 		"fileType": 8192,
@@ -9383,16 +10098,36 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/nikic\/php-parser\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/nikic\/php-parser\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/nikic\/php-parser\/grammar\/analyze.php": {
 		"fileType": 8192,
@@ -9404,16 +10139,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/nikic\/php-parser\/grammar\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/grammar\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/grammar\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/nikic\/php-parser\/grammar\/rebuildParser.php": {
 		"fileType": 8192,
@@ -11081,40 +11825,78 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/nikic\/php-parser\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/nikic\/php-parser\/UPGRADE-1.0.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/UPGRADE-1.0.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/nikic\/php-parser\/UPGRADE-1.0.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/phpdocumentor\/reflection-docblock\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpdocumentor\/reflection-docblock\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpdocumentor\/reflection-docblock\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/phpdocumentor\/reflection-docblock\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpdocumentor\/reflection-docblock\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpdocumentor\/reflection-docblock\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpdocumentor\/reflection-docblock\/src\/phpDocumentor\/Reflection\/DocBlock.php": {
 		"fileType": 8192,
@@ -11503,6 +12285,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpspec\/php-diff\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpspec\/php-diff\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpspec\/php-diff\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpspec\/php-diff\/example\/example.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -11593,17 +12386,48 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpspec\/phpspec\/box.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpspec\/phpspec\/box.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpspec\/phpspec\/box-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpspec\/phpspec\/CHANGES.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpspec\/phpspec\/CHANGES.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpspec\/phpspec\/CHANGES.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/phpspec\/phpspec\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpspec\/phpspec\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpspec\/phpspec\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/phpspec\/phpspec\/features\/bootstrap\/ApplicationContext.php": {
 		"fileType": 8192,
@@ -13991,40 +14815,78 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/phpspec\/prophecy\/CHANGES.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/CHANGES.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/CHANGES.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/phpspec\/prophecy\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/phpspec\/prophecy\/CONTRIBUTING.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/CONTRIBUTING.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpspec\/prophecy\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpspec\/prophecy\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpspec\/prophecy\/spec\/Prophecy\/Argument\/ArgumentsWildcardSpec.php": {
 		"fileType": 8192,
@@ -15259,29 +16121,58 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpunit\/php-code-coverage\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-code-coverage\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-code-coverage\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpunit\/php-code-coverage\/CONTRIBUTING.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-code-coverage\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-code-coverage\/CONTRIBUTING.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/php-code-coverage\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-code-coverage\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-code-coverage\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/php-code-coverage\/scripts\/auto_append.php": {
 		"fileType": 8192,
@@ -16152,6 +17043,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpunit\/php-file-iterator\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-file-iterator\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-file-iterator\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpunit\/php-file-iterator\/File\/Iterator.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -16207,28 +17109,57 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/phpunit\/php-text-template\/ChangeLog.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-text-template\/ChangeLog.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-text-template\/ChangeLog.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/phpunit\/php-text-template\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-text-template\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-text-template\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/phpunit\/php-text-template\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-text-template\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-text-template\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/php-text-template\/Text\/Template.php": {
 		"fileType": 8192,
@@ -16266,6 +17197,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpunit\/php-timer\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-timer\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-timer\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpunit\/php-timer\/PHP\/Timer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -16285,16 +17227,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/phpunit\/php-timer\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-timer\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-timer\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/php-timer\/Tests\/TimerTest.php": {
 		"fileType": 8192,
@@ -16305,17 +17256,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpunit\/php-token-stream\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-token-stream\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-token-stream\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpunit\/php-token-stream\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/php-token-stream\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/php-token-stream\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/php-token-stream\/src\/Token.php": {
 		"fileType": 8192,
@@ -16533,29 +17504,58 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpunit\/phpunit-mock-objects\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/phpunit-mock-objects\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/phpunit-mock-objects\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpunit\/phpunit-mock-objects\/CONTRIBUTING.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/phpunit-mock-objects\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/phpunit-mock-objects\/CONTRIBUTING.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/phpunit-mock-objects\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/phpunit-mock-objects\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/phpunit-mock-objects\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/phpunit-mock-objects\/src\/Framework\/MockObject\/Builder\/Identity.php": {
 		"fileType": 8192,
@@ -17187,29 +18187,58 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpunit\/phpunit\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpunit\/phpunit\/CONTRIBUTING.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/CONTRIBUTING.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/phpunit\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/phpunit\/phpunit\/src\/Exception.php": {
 		"fileType": 8192,
@@ -18894,6 +19923,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/phpunit\/phpunit\/tests\/_files\/JsonData\/arrayObject.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/tests\/_files\/JsonData\/arrayObject.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/tests\/_files\/JsonData\/arrayObject-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/phpunit\/phpunit\/tests\/_files\/JsonData\/simpleObject.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/tests\/_files\/JsonData\/simpleObject.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/phpunit\/phpunit\/tests\/_files\/JsonData\/simpleObject-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/phpunit\/phpunit\/tests\/_files\/MockRunner.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -19803,29 +20854,58 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/psy\/psysh\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/psy\/psysh\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/psy\/psysh\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/psy\/psysh\/CONTRIBUTING.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/psy\/psysh\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/psy\/psysh\/CONTRIBUTING.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/psy\/psysh\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/psy\/psysh\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/psy\/psysh\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/psy\/psysh\/src\/Psy\/Autoloader.php": {
 		"fileType": 8192,
@@ -20817,6 +21897,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/psy\/psysh\/test\/fixtures\/unvis_fixtures.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/psy\/psysh\/test\/fixtures\/unvis_fixtures.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/psy\/psysh\/test\/fixtures\/unvis_fixtures-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/psy\/psysh\/test\/Psy\/Test\/AutoloaderTest.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -21222,17 +22313,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/sebastian\/comparator\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/sebastian\/comparator\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/sebastian\/comparator\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/sebastian\/comparator\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/comparator\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/sebastian\/comparator\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/sebastian\/comparator\/src\/ArrayComparator.php": {
 		"fileType": 8192,
@@ -21567,17 +22678,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/sebastian\/diff\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/sebastian\/diff\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/sebastian\/diff\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/sebastian\/diff\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/diff\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/sebastian\/diff\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/sebastian\/diff\/src\/Chunk.php": {
 		"fileType": 8192,
@@ -21660,17 +22791,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/sebastian\/environment\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/sebastian\/environment\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/sebastian\/environment\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/sebastian\/environment\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/environment\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/sebastian\/environment\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/sebastian\/environment\/src\/Console.php": {
 		"fileType": 8192,
@@ -21708,17 +22859,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/sebastian\/exporter\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/sebastian\/exporter\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/sebastian\/exporter\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/sebastian\/exporter\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/exporter\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/sebastian\/exporter\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/sebastian\/exporter\/src\/Exporter.php": {
 		"fileType": 8192,
@@ -21738,17 +22909,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/sebastian\/global-state\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/sebastian\/global-state\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/sebastian\/global-state\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/sebastian\/global-state\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/global-state\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/sebastian\/global-state\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/sebastian\/global-state\/src\/Blacklist.php": {
 		"fileType": 8192,
@@ -21840,17 +23031,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/sebastian\/recursion-context\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/sebastian\/recursion-context\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/sebastian\/recursion-context\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/sebastian\/recursion-context\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/recursion-context\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/sebastian\/recursion-context\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/sebastian\/recursion-context\/src\/Context.php": {
 		"fileType": 8192,
@@ -21889,28 +23100,57 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/sebastian\/version\/ChangeLog.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/version\/ChangeLog.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/sebastian\/version\/ChangeLog.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/sebastian\/version\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/sebastian\/version\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/sebastian\/version\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/sebastian\/version\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/version\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/sebastian\/version\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/sebastian\/version\/src\/autoload.php": {
 		"fileType": 8192,
@@ -21938,6 +23178,28 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/services.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/services.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/services-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/swiftmailer\/swiftmailer\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/swiftmailer\/swiftmailer\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/swiftmailer\/swiftmailer\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/swiftmailer\/swiftmailer\/lib\/classes\/Swift.php": {
 		"fileType": 8192,
@@ -24606,16 +25868,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Command\/Command.php": {
 		"fileType": 8192,
@@ -24643,6 +25914,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/ConsoleEvents.php": {
 		"fileType": 8192,
@@ -25122,16 +26404,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Shell.php": {
 		"fileType": 8192,
@@ -25250,29 +26541,69 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_1.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/application_2.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/BarBucCommand.php": {
 		"fileType": 8192,
@@ -25283,29 +26614,69 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_1.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/command_2.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/DescriptorApplication1.php": {
 		"fileType": 8192,
@@ -25433,137 +26804,357 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_1.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_2.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_argument_3.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_1.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_2.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_3.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_definition_4.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_1.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_2.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_3.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/input_option_4.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/console\/Symfony\/Component\/Console\/Tests\/Fixtures\/TestCommand.php": {
 		"fileType": 8192,
@@ -25809,16 +27400,36 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/Debug.php": {
 		"fileType": 8192,
@@ -25965,16 +27576,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/debug\/Symfony\/Component\/Debug\/Tests\/DebugClassLoaderTest.php": {
 		"fileType": 8192,
@@ -26112,16 +27732,36 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/ContainerAwareEventDispatcher.php": {
 		"fileType": 8192,
@@ -26223,16 +27863,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/event-dispatcher\/Symfony\/Component\/EventDispatcher\/Tests\/AbstractEventDispatcherTest.php": {
 		"fileType": 8192,
@@ -26307,16 +27956,36 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/Exception\/ExceptionInterface.php": {
 		"fileType": 8192,
@@ -26373,16 +28042,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/filesystem\/Symfony\/Component\/Filesystem\/Tests\/ExceptionTest.php": {
 		"fileType": 8192,
@@ -26475,16 +28153,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/Comparator\/Comparator.php": {
 		"fileType": 8192,
@@ -26512,6 +28199,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/Exception\/AccessDeniedException.php": {
 		"fileType": 8192,
@@ -26739,16 +28437,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/finder\/Symfony\/Component\/Finder\/Shell\/Command.php": {
 		"fileType": 8192,
@@ -27084,16 +28791,36 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/Cookie.php": {
 		"fileType": 8192,
@@ -27285,16 +29012,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/http-foundation\/Symfony\/Component\/HttpFoundation\/RedirectResponse.php": {
 		"fileType": 8192,
@@ -28116,16 +29852,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/Client.php": {
 		"fileType": 8192,
@@ -28135,6 +29880,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/Config\/EnvParametersResource.php": {
 		"fileType": 8192,
@@ -29127,16 +30883,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/http-kernel\/Symfony\/Component\/HttpKernel\/TerminableInterface.php": {
 		"fileType": 8192,
@@ -29796,16 +31561,36 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/process\/Symfony\/Component\/Process\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/process\/Symfony\/Component\/Process\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/process\/Symfony\/Component\/Process\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/process\/Symfony\/Component\/Process\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/process\/Symfony\/Component\/Process\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/process\/Symfony\/Component\/Process\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/process\/Symfony\/Component\/Process\/Exception\/ExceptionInterface.php": {
 		"fileType": 8192,
@@ -29952,16 +31737,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/process\/Symfony\/Component\/Process\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/process\/Symfony\/Component\/Process\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/process\/Symfony\/Component\/Process\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/process\/Symfony\/Component\/Process\/Tests\/AbstractProcessTest.php": {
 		"fileType": 8192,
@@ -30099,16 +31893,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/CompiledRoute.php": {
 		"fileType": 8192,
@@ -30118,6 +31921,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/Exception\/ExceptionInterface.php": {
 		"fileType": 8192,
@@ -30417,16 +32231,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/routing\/Symfony\/Component\/Routing\/RequestContext.php": {
 		"fileType": 8192,
@@ -31184,6 +33007,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/symfony\/security-core\/Symfony\/Component\/Security\/Core\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/security-core\/Symfony\/Component\/Security\/Core\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/security-core\/Symfony\/Component\/Security\/Core\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/symfony\/security-core\/Symfony\/Component\/Security\/Core\/Encoder\/BasePasswordEncoder.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -31509,16 +33343,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/security-core\/Symfony\/Component\/Security\/Core\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/security-core\/Symfony\/Component\/Security\/Core\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/security-core\/Symfony\/Component\/Security\/Core\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/security-core\/Symfony\/Component\/Security\/Core\/Role\/Role.php": {
 		"fileType": 8192,
@@ -32160,16 +34003,36 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Dumper\/CsvFileDumper.php": {
 		"fileType": 8192,
@@ -32514,16 +34377,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/Catalogue\/AbstractOperationTest.php": {
 		"fileType": 8192,
@@ -32650,6 +34522,39 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/empty.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/empty.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/empty-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/malformed.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/malformed.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/malformed-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/resources.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/resources.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/resources-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/translation\/Symfony\/Component\/Translation\/Tests\/fixtures\/resources.php": {
 		"fileType": 8192,
@@ -33047,6 +34952,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/symfony\/var-dumper\/Symfony\/Component\/VarDumper\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/var-dumper\/Symfony\/Component\/VarDumper\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/var-dumper\/Symfony\/Component\/VarDumper\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/symfony\/var-dumper\/Symfony\/Component\/VarDumper\/Dumper\/AbstractDumper.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -33093,16 +35009,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/var-dumper\/Symfony\/Component\/VarDumper\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/var-dumper\/Symfony\/Component\/VarDumper\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/var-dumper\/Symfony\/Component\/VarDumper\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/var-dumper\/Symfony\/Component\/VarDumper\/Resources\/functions\/dump.php": {
 		"fileType": 8192,
@@ -33159,16 +35084,36 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/CHANGELOG.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/CHANGELOG.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/Dumper.php": {
 		"fileType": 8192,
@@ -33243,16 +35188,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/symfony\/yaml\/Symfony\/Component\/Yaml\/Tests\/DumperTest.php": {
 		"fileType": 8192,
@@ -33317,17 +35271,37 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/vlucas\/phpdotenv\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/vlucas\/phpdotenv\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/vlucas\/phpdotenv\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/vendor\/vlucas\/phpdotenv\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/vlucas\/phpdotenv\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/vendor\/vlucas\/phpdotenv\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/vlucas\/phpdotenv\/src\/Dotenv.php": {
 		"fileType": 8192,
@@ -33630,6 +35604,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -33716,6 +35694,10 @@
 			},
 		"noarg": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"node": {
@@ -33816,6 +35798,10 @@
 			},
 		"unused": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"withstmt": {
@@ -33941,6 +35927,14 @@
 			"flagValue": -1
 			}
 		},
+	"jsonAutoOutputPathEnabled": 0,
+	"jsonAutoOutputPathFilenamePattern": "*-min.json",
+	"jsonAutoOutputPathRelativePath": "",
+	"jsonAutoOutputPathReplace1": "",
+	"jsonAutoOutputPathReplace2": "",
+	"jsonAutoOutputPathStyle": 0,
+	"jsonOrderOutput": 0,
+	"jsonOutputStyle": 1,
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
 	"kitAutoOutputPathRelativePath": "",
@@ -33968,9 +35962,18 @@
 	"markdownAutoOutputPathReplace1": "",
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
+	"markdownCriticStyle": 0,
 	"markdownEnableFootnotes": 0,
-	"markdownEnableSmartyPants": 1,
-	"markdownExpandTabs": 1,
+	"markdownEnableLabels": 1,
+	"markdownEnableSmartQuotes": 1,
+	"markdownEscapeLineBreaks": 0,
+	"markdownMaskEmailAddresses": 1,
+	"markdownOutputFormat": 0,
+	"markdownOutputStyle": 0,
+	"markdownParseMetadata": 1,
+	"markdownProcessHTML": 0,
+	"markdownRandomFootnoteNumbers": 0,
+	"markdownUseCompatibilityMode": 0,
 	"reloadFileURLs": 0,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
@@ -34026,6 +36029,10 @@
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -34106,6 +36113,10 @@
 			"flagValue": -1
 			},
 		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
 			"active": 0,
 			"flagValue": -1
 			},

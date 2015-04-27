@@ -11,6 +11,8 @@
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" type="text/css" href=" //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href=" //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.print.css "> -->
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,6 +43,7 @@
 					<li class="navbar-item"><a href="faq">FAQ</a></li>
 					<li class="navbar-item"><a href="volunteer">Volunteer</a></li>
 					<li class="navbar-item"><a href="support">Support</a></li>
+					<li class="navbar-item"><a href="calendar">Calendar</a></li>
 					<li class="navbar-item"><a href="contact">Contact</a></li>
 				</ul>
 			</div>
@@ -62,6 +65,7 @@
 						<li class="footer-nav"><a href="#">FAQ</a></li>
 						<li class="footer-nav"><a href="#">Volunteer</a></li>
 						<li class="footer-nav"><a href="#">Support</a></li>
+						<li class="footer-nav"><a href="calendar">Calendar</a></li>
 						<li class="footer-nav"><a href="#">Contact</a></li>
 					</ul>
 					<br>
@@ -74,5 +78,7 @@
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- <script src=" //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.js"></script> -->
+	<script src="{{ asset('/js/app.js') }}"></script>
 </body>
 </html>
