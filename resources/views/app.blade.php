@@ -37,11 +37,11 @@
 			</div>
 			<div class="collapse navbar-collapse" id="mainNav">
 				<ul class="nav navbar-nav main-nav">
-					<li class="navbar-item"><a href="#">Home</a></li>
-					<li class="navbar-item"><a href="#">FAQ</a></li>
-					<li class="navbar-item"><a href="#">Volunteer</a></li>
-					<li class="navbar-item"><a href="#">Support</a></li>
-					<li class="navbar-item"><a href="#">Contact</a></li>
+					<li class="navbar-item"><a href="/">Home</a></li>
+					<li class="navbar-item"><a href="faq">FAQ</a></li>
+					<li class="navbar-item"><a href="volunteer">Volunteer</a></li>
+					<li class="navbar-item"><a href="support">Support</a></li>
+					<li class="navbar-item"><a href="contact">Contact</a></li>
 				</ul>
 			</div>
 
@@ -49,7 +49,6 @@
 	</nav>
 
 	<div class="container">
-		
 		@yield('content')
 	</div>
 	

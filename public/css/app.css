@@ -4156,7 +4156,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #a0cdb4;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -4197,7 +4197,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
+    color: #a0cdb4;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
@@ -4217,14 +4217,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #023517;
 }
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #a0cdb4;
 }
 .navbar-default .btn-link {
   color: #023517;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #333333;
+  color: #a0cdb4;
 }
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
@@ -6290,10 +6290,17 @@ label,
 .checkbox label {
   font-weight: 300;
 }
+/*=======================================================
+=            Style for the full width footer            =
+=======================================================*/
 .container-full {
   width: 100%;
   margin: 0 auto;
 }
+/*-----  End of Style for the full width footer  ------*/
+/*=======================================================================
+=            Brown border for some of the blocks on the page            =
+=======================================================================*/
 .navbar-default {
   border-bottom: 3px solid #bb9a6b;
   border-top: 3px solid #bb9a6b;
@@ -6305,9 +6312,10 @@ label,
   border-bottom: 3px solid #bb9a6b;
   border-top: 3px solid #bb9a6b;
 }
-.green-white-gradient {
-  background: linear-gradient(to top, #a0cdb4, #ffffff, #a0cdb4);
-}
+/*-----  End of Brown border for some of the blocks on the page  ------*/
+/*==================================================
+=            Styles for the head banner            =
+==================================================*/
 .wide {
   width: 100%;
 }
@@ -6315,23 +6323,35 @@ label,
   width: 100%;
   height: auto;
 }
+/*-----  End of Styles for the head banner  ------*/
+/*==========  Set global link color to dark green  ==========*/
 a {
   color: #023517;
 }
+/*==========  Set panel titles to dark green color  ==========*/
 .panel-title {
   color: #023517;
 }
+/*==========  Style for the open hours block on the home page  ==========*/
 #homepage-panel div {
   padding: 0 4% 2% 4%;
 }
+/*==========================================================
+=            Volunteer and Donate button styles            =
+==========================================================*/
 .full-width {
   width: 80%;
   color: #023517 !important;
 }
+/*-----  End of Volunteer and Donate button styles  ------*/
+/*==========  Style to add vertical lines on top nav  ==========*/
 .main-nav li a {
   border-right: 1px solid #000;
   width: 100%;
 }
+/*=============================================
+=            Styles for the footer            =
+=============================================*/
 .footer-nav {
   float: left;
   width: 20%;
@@ -6341,7 +6361,7 @@ a {
 }
 .footer-nav a:hover {
   text-decoration: none;
-  color: inherit;
+  color: #a0cdb4;
 }
 .footer-nav:last-of-type {
   border: none;
@@ -6349,9 +6369,17 @@ a {
 .full-width:hover {
   color: #a0cdb4 !important;
 }
+/*-----  End of Styles for the footer  ------*/
+/*===============================================================
+=            Gradient styles for the nav and buttons            =
+===============================================================*/
+.green-white-gradient {
+  background: linear-gradient(to top, #a0cdb4, #ffffff, #a0cdb4);
+}
 .yellow-white-gradient {
   background: linear-gradient(to top, #f7f79c, #ffffff, #f7f79c);
   border: 2px solid #023517;
   font-size: 30px;
   color: #000;
 }
+/*-----  End of Gradient styles for the nav and buttons  ------*/
