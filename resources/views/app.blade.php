@@ -50,6 +50,25 @@
 
 		</div>
 	</nav>
+	<!-- {!! Navbar::withContent(Navigation::links([
+              [
+                  'link' => '#',
+                  'title' => 'Home',
+              ],
+              [
+                  'link' => '#',
+                  'title' => 'Link'
+              ],
+              [
+                  'link' => '#',
+                  'title' => 'Link'
+              ],
+              [
+                  'link' => '#',
+                  'title' => 'Link'
+              ]
+          ]
+			)) !!} -->
 
 	<div class="container">
 		@yield('content')

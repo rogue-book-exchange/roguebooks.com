@@ -45,20 +45,20 @@ Home Page
       <br>
       <div class="row">
         <div class="col-sm-12">
-          <p>Rogue Book Exchange is a nonprofit organization founded to unite unwanted books with people who want them. We look like a bookstore, but there's one big difference: all the books on the shelves are free!</p>
+          <p>{{ $contents[0]->body }}</p>
         </div>
       </div>
       <br>
       <div class="panel panel-success" id="homepage-panel">
         <div class="panel-body text-center">
-          <h3>Open 10am-3pm Wednesday-Saturday</h3>
-          <p>Donations can be left in the shed across the parking lot any time. Larger donations will be accepted by appointment</p>
+          <h3>{{ $contents[1]->heading1 }}</h3>
+          <p>{{ $contents[1]->body }}</p>
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col-sm-12">
-          <p>A small percentage of donated books will be sold online in order to pay the bills. All other books will be made available free to the public. You don't have to donate books in order to take some home and you don't have to take any home if you donate. Someone would love to have the books and other media that have been gathering dust on your shelves or in storage so bring them on in and take home something new!</p>
+          <p>{{ $contents[2]->body }}</p>
 
           <ul>
             <li>

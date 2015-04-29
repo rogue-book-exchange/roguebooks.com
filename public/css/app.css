@@ -6296,6 +6296,8 @@ label,
 .container-full {
   width: 100%;
   margin: 0 auto;
+  bottom: 0;
+  left: 0;
 }
 /*-----  End of Style for the full width footer  ------*/
 /*=======================================================================

@@ -11,8 +11,12 @@ return array(
     'Stringy\\' => array($vendorDir . '/danielstjules/stringy/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
+    'League\\CommonMark\\' => array($vendorDir . '/league/commonmark/src'),
     'Illuminate\\Html\\' => array($vendorDir . '/illuminate/html'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
+    'GrahamCampbell\\Markdown\\' => array($vendorDir . '/graham-campbell/markdown/src'),
+    'DummyClasses\\' => array($vendorDir . '/patricktalmadge/bootstrapper/tests/DummyClasses'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),
+    'Bootstrapper\\' => array($vendorDir . '/patricktalmadge/bootstrapper/src/Bootstrapper'),
     'App\\' => array($baseDir . '/app'),
 );

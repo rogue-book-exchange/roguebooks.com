@@ -12,10 +12,11 @@
 */
 
 Route::get('/', 'PagesController@index');
+Route::get('/login', 'PagesController@login');
 
 Route::get('/{page_uri?}', 'PagesController@show');
 
-// Route::controllers([
-// 	'auth' => 'Auth\AuthController',
-// 	'password' => 'Auth\PasswordController',
-// ]);
+Route::controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);
