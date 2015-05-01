@@ -13,6 +13,7 @@ class PagesController extends Controller {
 	{
 		$contents = Page::where('page_uri', '=', 'home')->orderBy('group_id')->get();
 		return view('pages.home', compact('contents'));
+		// return var_dump(isset($contents[0]));
 	}
 
 	public function login()
@@ -25,7 +26,8 @@ class PagesController extends Controller {
 		if (View::exists('pages.'.$page_uri))
 		{
 	    $contents = Page::where('page_uri', '=', $page_uri)->orderBy('group_id')->get();
-			return view('pages.' . $page_uri, compact('contents'));
+			// return view('pages.' . $page_uri, compact('contents'));
+			
 		} else if (View::exists('forms.'.$page_uri))
 		{
 	    $contents = Page::where('page_uri', '=', $page_uri)->orderBy('group_id')->get();

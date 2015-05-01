@@ -45,20 +45,26 @@ Home Page
       <br>
       <div class="row">
         <div class="col-sm-12">
-          <p>{{ $contents[0]->body }}</p>
+          @if (isset($contents[0]))
+            <p>{{ $contents[0]->body }}</p>
+          @endif
         </div>
       </div>
       <br>
       <div class="panel panel-success" id="homepage-panel">
         <div class="panel-body text-center">
-          <h3>{{ $contents[1]->heading1 }}</h3>
-          <p>{{ $contents[1]->body }}</p>
+          @if (isset($contents[1]))
+            <h3>{{ $contents[1]->heading1 }}</h3>
+            <p>{{ $contents[1]->body }}</p>
+          @endif
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col-sm-12">
-          <p>{{ $contents[2]->body }}</p>
+          @if (isset($contents[2]))
+            <p>{{ $contents[2]->body }}</p>
+          @endif
 
           <ul>
             <li>

@@ -46,6 +46,14 @@
 					<li class="navbar-item"><a href="calendar">Calendar</a></li>
 					<li class="navbar-item"><a href="contact">Contact</a></li>
 				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					@if (Auth::check())
+						<li><a href="#">Edit Page</a></li>
+						<li><a href="/auth/logout">Logout</a></li>
+					@else
+						<li><a href="/login">Login</a></li>
+					@endif
+				</ul>
 			</div>
 
 		</div>
