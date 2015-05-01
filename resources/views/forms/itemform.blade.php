@@ -34,7 +34,7 @@
 
 @section('content')
 
-<h1>Items Needed</h1>
+<h1>What we need and when we need it</h1>
 
 <hr/>
 
