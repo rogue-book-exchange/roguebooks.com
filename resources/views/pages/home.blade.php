@@ -18,7 +18,7 @@ Home Page
         <div class="col-sm-6 text-center">
           <!-- Content from database -->
           <p>As always, all donations are tax deductible!</p>
-          <a href="#" class="btn btn-success yellow-white-gradient full-width">Donate</a>
+          @include('partials.paypal')
           <!-- end content from database -->
         </div>
       </div>
@@ -39,23 +39,23 @@ Home Page
           <a href="#" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
         </div>
         <div class="col-sm-6 text-center">
-          <a href="#" class="btn btn-success yellow-white-gradient full-width">Donate</a>
+          @include('partials.paypal')
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col-sm-12">
-          @if (isset($contents[0]))
-            <p>{{ $contents[0]->body }}</p>
-          @endif
         </div>
       </div>
       <br>
       <div class="panel panel-success" id="homepage-panel">
         <div class="panel-body text-center">
-          @if (isset($contents[1]))
-            <h3>{{ $contents[1]->heading1 }}</h3>
-            <p>{{ $contents[1]->body }}</p>
+          @if (Auth::check())
+            {!! Form::open() !!}
+            {!! Form::textarea('openhoursheader', $block['openhoursheader']) !!}
+            {!! Form::close() !!}
+          @else
+            <h3>{{ $block['openhoursheader'] }}</h3>
           @endif
         </div>
       </div>

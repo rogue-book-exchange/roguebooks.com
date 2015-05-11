@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNeedsTable extends Migration {
+class CreateBlocksTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,15 +12,12 @@ class CreateNeedsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('needs', function(Blueprint $table)
+		Schema::create('blocks', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('page_id');
 			$table->string('name');
-			$table->string('description');
-			$table->date('needed_by');
-			$table->integer('priority');
-			$table->integer('contact_id');
-			$table->timestamps();
+			$table->text('content');
 		});
 	}
 
@@ -31,7 +28,7 @@ class CreateNeedsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('needs');
+		Schema::drop('blocks');
 	}
 
 }

@@ -4,18 +4,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Page extends Model {
 
-  public $timestamps = false;
-
 	protected $table = 'pages';
 
+  public $timestamps = false;
+
 	protected $fillable = [
-    'group_id',
-    'heading1', 
-    'heading2', 
-    'body',
-    'page_uri',
-    'created_at', 
+    'name',
+    'url',
+    'created_at',
     'updated_at'
   ];
+
+  public function blocks()
+  {
+    return $this->hasMany('App\Block');
+  }
 
 }

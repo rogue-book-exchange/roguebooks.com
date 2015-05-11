@@ -5,5 +5,7 @@
 @stop
 
 @section('content')
-  <h2>Hello</h2>
+  @if ($block['top-header'])
+    <h1>{{$block['top-header']}}</h1>
+  @endif
 @stop

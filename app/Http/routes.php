@@ -14,6 +14,7 @@
 Route::get('/', 'PagesController@index');
 Route::get('/login', 'PagesController@login');
 
+// Route::get('/edit/{page_uri?}', 'FormController@load');
 Route::get('/{page_uri?}', 'PagesController@show');
 
 Route::controllers([
