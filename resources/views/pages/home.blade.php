@@ -85,7 +85,7 @@ Home Page
         <div class="panel-body text-center">
           @if (array_key_exists('hours-header', $page) && array_key_exists('hours-body', $page))
             @if (Auth::check())
-              {!! Form::textarea('hours-header', $page['hours-header'], array('rows'=>'1', 'for'=>'page-form')) !!}
+              {!! Form::text('hours-header', $page['hours-header'], array('rows'=>'1', 'for'=>'page-form')) !!}
               {!! Form::textarea('hours-body', $page['hours-body'], array('rows'=>'3', 'for'=>'page-form')) !!}
             @else
               <h3>{{ $page['hours-header'] }}</h3>
@@ -114,7 +114,7 @@ Home Page
             <div class="panel-title text-center">
               @if (array_key_exists('wish-list', $page))
                 @if (Auth::check())
-                  {!! Form::textarea('wish-list', $page['wish-list'], array('rows'=>'1', 'for'=>'page-form')) !!}
+                  {!! Form::text('wish-list', $page['wish-list'], array('rows'=>'1', 'for'=>'page-form')) !!}
                 @else
                   <h2>{{ $page['wish-list'] }}</h2>
                 @endif
@@ -144,7 +144,7 @@ Home Page
             <div class="panel-title text-center">
               @if (array_key_exists('new-on-amazon', $page))
                 @if (Auth::check())
-                  {!! Form::textarea('new-on-amazon', $page['new-on-amazon'], array('rows'=>'1','for'=>'page-form')) !!}
+                  {!! Form::text('new-on-amazon', $page['new-on-amazon'], array('rows'=>'1','for'=>'page-form')) !!}
                 @else
                   <h2>{{ $page['new-on-amazon'] }}</h2>
                 @endif
