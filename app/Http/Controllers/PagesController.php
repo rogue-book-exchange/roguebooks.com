@@ -10,18 +10,20 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller {
 
+
 	public function index()
 	{
+		$contents = [];
+		$page = [];
 		if (Page::where('url', '=', 'home')->first()) {
 			$contents = Page::where('url', '=', 'home')->first()->blocks()->get();
-			$block = [];
 			foreach ($contents as $content) {
-				$block[$content['name']] = $content['content'];
+				$page[$content['name']] = $content['content'];
 			}
-		} else {
-			$contents = [];
 		}
-		return view('pages.home', compact('block'));
+		// return $page;
+		// return var_dump(array_key_exists('hours-header', $page));
+		return view('pages.home', compact('page'));
 	}
 
 	public function login()
@@ -33,16 +35,18 @@ class PagesController extends Controller {
 	{
 		if (View::exists('pages.'.$page_uri))
 		{
+			$contents = [];
+	    $page = [];
 	    if (Page::where('url', '=', $page_uri)->first()) {
 	    	$contents = Page::where('url', '=', $page_uri)->first()->blocks()->get();
-		    $block = [];
 				foreach ($contents as $content) {
-					$block[$content['name']] = $content['content'];
+					$page[$content['name']] = $content['content'];
 				}
 	    }
-			return view('pages.' . $page_uri, compact('block'));
+			return view('pages.' . $page_uri, compact('page'));
 		} else {
 			return redirect('/');
 		}
 	}
+
 }

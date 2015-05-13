@@ -5,19 +5,33 @@ Home Page
 @endsection
 
 @section('content')
+  {!! Form::open(array('name'=>'page-form')) !!}
+  {!! Form::close() !!}
   <div class="row">
     <div class="col-sm-7">
       <div class="row visible-xs">
         <div class="col-sm-6 text-center">
           <!-- Content from database -->
-          <p>We always have books waiting to be shelved. Sign up to <b>Volunteer Today!</b></p>
-          <a href="#" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
+          @if (array_key_exists('volunteer-text', $page))
+            @if (Auth::check())
+              {!! Form::textarea('volunteer-text', $page['volunteer-text'], array('rows'=>'2', 'for'=>'page-form')) !!}
+            @else
+              <p>{{ $page['volunteer-text'] }}</p>
+            @endif
+          @endif
+          <a href="forms/signup" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
           <!-- end content from database -->
         </div>
         <br>
         <div class="col-sm-6 text-center">
           <!-- Content from database -->
-          <p>As always, all donations are tax deductible!</p>
+          @if (array_key_exists('donate-text', $page))
+            @if (Auth::check())
+              {!! Form::textarea('donate-text', $page['donate-text'], array('rows'=>'2', 'for'=>'page-form')) !!}
+            @else
+              <p>{{ $page['donate-text'] }}</p>
+            @endif
+          @endif
           @include('partials.paypal')
           <!-- end content from database -->
         </div>
@@ -25,18 +39,30 @@ Home Page
       <div class="row hidden-xs">
         <div class="col-sm-6 text-center">
           <!-- Content from database -->
-          <p>We always have books waiting to be shelved. Sign up to <b>Volunteer Today!</b></p>
+          @if (array_key_exists('volunteer-text', $page))
+            @if (Auth::check())
+              {!! Form::textarea('volunteer-text', $page['volunteer-text'], array('rows'=>'2', 'for'=>'page-form')) !!}
+            @else
+              <p>{{ $page['volunteer-text'] }}</p>
+            @endif
+          @endif
           <!-- end content from database -->
         </div>
         <div class="col-sm-6 text-center">
           <!-- Content from database -->
-          <p>As always, all donations are tax deductible!</p>
+          @if (array_key_exists('donate-text', $page))
+            @if (Auth::check())
+              {!! Form::textarea('donate-text', $page['donate-text'], array('rows'=>'2', 'for'=>'page-form')) !!}
+            @else
+              <p>{{ $page['donate-text'] }}</p>
+            @endif
+          @endif
           <!-- end content from database -->
         </div>
       </div>
       <div class="row hidden-xs">
         <div class="col-sm-6 text-center">
-          <a href="#" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
+          <a href="forms/signup" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
         </div>
         <div class="col-sm-6 text-center">
           @include('partials.paypal')
@@ -45,39 +71,39 @@ Home Page
       <br>
       <div class="row">
         <div class="col-sm-12">
+          @if (array_key_exists('body-intro-1', $page))
+            @if (Auth::check())
+              {!! Form::textarea('body-intro-1', $page['body-intro-1'], array('rows'=>'4', 'for'=>'page-form')) !!}
+            @else
+              <p>{{ $page['body-intro-1'] }}</p>
+            @endif
+          @endif
         </div>
       </div>
       <br>
       <div class="panel panel-success" id="homepage-panel">
         <div class="panel-body text-center">
-          @if (Auth::check())
-            {!! Form::open() !!}
-            {!! Form::textarea('openhoursheader', $block['openhoursheader']) !!}
-            {!! Form::close() !!}
-          @else
-            <h3>{{ $block['openhoursheader'] }}</h3>
+          @if (array_key_exists('hours-header', $page) && array_key_exists('hours-body', $page))
+            @if (Auth::check())
+              {!! Form::textarea('hours-header', $page['hours-header'], array('rows'=>'1', 'for'=>'page-form')) !!}
+              {!! Form::textarea('hours-body', $page['hours-body'], array('rows'=>'3', 'for'=>'page-form')) !!}
+            @else
+              <h3>{{ $page['hours-header'] }}</h3>
+              <p>{{ $page['hours-body'] }}</p>
+            @endif
           @endif
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col-sm-12">
-          @if (isset($contents[2]))
-            <p>{{ $contents[2]->body }}</p>
+          @if (array_key_exists('body-intro-2', $page))
+            @if (Auth::check())
+              {!! Form::textarea('body-intro-2', $page['body-intro-2'], array('rows'=>'6', 'for'=>'page-form')) !!}
+            @else
+              <p>{{ $page['body-intro-2'] }}</p>
+            @endif
           @endif
-
-          <ul>
-            <li>
-              Our largest selections are in general fiction, mystery/thriller/horror, religion and spirituality, nonfiction, health/diet and romance. We also have many items in young adult, reference/ educational/ textbooks/ homeschool, pregnancy/ parenting, childrens, cookbooks, biography and autobiography, science fiction/ fantasy, history and current events, business/ finance, sports, travel, pets, humor, home improvement, crafts/ hobbies, foreign language, games, computer, nature, classics, western, movies, audiobooks, and CDs. Obviously, our stock will be in constant flux so you'll have to come in to see what you can find!
-            </li>
-            <li>
-              We do not accept encyclopedias, Reader's Digest Condensed books or magazines.
-            </li>
-            <li>
-              There is a donation drop box available in our parking lot for drop-off any time-- look for the book shed! If you have a large donation and can not make it to us during open hours, please call to schedule an appointment.
-            </li>
-          </ul>
-
         </div>
       </div>
     </div>
@@ -86,24 +112,43 @@ Home Page
         <div class="panel-heading-border">
           <div class="panel-heading green-white-gradient">
             <div class="panel-title text-center">
-              <h2>Our Wish List</h2>
+              @if (array_key_exists('wish-list', $page))
+                @if (Auth::check())
+                  {!! Form::textarea('wish-list', $page['wish-list'], array('rows'=>'1', 'for'=>'page-form')) !!}
+                @else
+                  <h2>{{ $page['wish-list'] }}</h2>
+                @endif
+              @endif
             </div>
           </div>
         </div>
         <div class="panel-body">
-          <ul>
+          @if (array_key_exists('wish-list-body', $page))
+            @if (Auth::check())
+              {!! Form::textarea('wish-list-body', $page['wish-list-body'], array('rows'=>'9', 'for'=>'page-form')) !!}
+            @else
+              <p>{{ $page['wish-list-body'] }}</p>
+            @endif
+          @endif
+          <!-- <ul>
             <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
             <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
             <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
             <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
       <div class="panel panel-success">
         <div class="panel-heading-border">
           <div class="panel-heading green-white-gradient">
             <div class="panel-title text-center">
-              <h2>Whats new on our Amazon</h2>
+              @if (array_key_exists('new-on-amazon', $page))
+                @if (Auth::check())
+                  {!! Form::textarea('new-on-amazon', $page['new-on-amazon'], array('rows'=>'1','for'=>'page-form')) !!}
+                @else
+                  <h2>{{ $page['new-on-amazon'] }}</h2>
+                @endif
+              @endif
             </div>
           </div>
         </div>

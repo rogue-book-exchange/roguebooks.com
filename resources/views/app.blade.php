@@ -48,7 +48,6 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::check())
-						<li><a href="#">Edit Page</a></li>
 						<li><a href="/auth/logout">Logout</a></li>
 					@else
 						<li><a href="/login">Login</a></li>
@@ -58,7 +57,7 @@
 
 		</div>
 	</nav>
-
+	
 	<div class="container">
 		@yield('content')
 	</div>
