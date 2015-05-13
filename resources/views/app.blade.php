@@ -45,6 +45,7 @@
 					<li class="navbar-item"><a href="support">Support</a></li>
 					<li class="navbar-item"><a href="calendar">Calendar</a></li>
 					<li class="navbar-item"><a href="contact">Contact</a></li>
+          <li class="navbar-item"><a href="tour">Tour</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::check())
