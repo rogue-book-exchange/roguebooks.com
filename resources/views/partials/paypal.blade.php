@@ -10,3 +10,4 @@
 <input type="hidden" name="bn" value="PP-DonationsBF">
 <input type="submit" class="btn btn-success yellow-white-gradient full-width" border="0" value="Donate" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
 </form>
+<sub>Donations made via PayPal</sub>
