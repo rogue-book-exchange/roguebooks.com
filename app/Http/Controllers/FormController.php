@@ -24,7 +24,7 @@ class FormController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function update_content()
 	{
 		$page_contents = Request::all();
 		array_shift($page_contents);

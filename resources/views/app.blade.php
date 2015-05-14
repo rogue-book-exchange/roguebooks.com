@@ -23,7 +23,7 @@
 </head>
 <body>
 
-	{!! Form::open(['url'=>'/update-page', 'id'=>'page-update']) !!}
+	{!! Form::open(['url'=>'/update-content', 'id'=>'page-update']) !!}
 	{!! Form::close() !!}
 
 	<div class="wide">
@@ -51,15 +51,10 @@
           <li class="navbar-item"><a href="tour">Tour</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					@if (Auth::check())
-						@if (!empty($page))
-							<li class="navbar-btn">
-								{!! Form::submit('Save Changes', ['form'=>'page-update', 'class'=>'navbar-item btn-success']) !!}
-							</li>
-						@endif
-						<li class="navbar-item"><a href="/auth/logout">Logout</a></li>
-					@else
-						<li class="navbar-item"><a href="/login">Login</a></li>
+					@if (Auth::check() && !empty($page))
+						<li class="navbar-btn">
+							{!! Form::submit('Save Page Changes', ['form'=>'page-update', 'class'=>'navbar-item btn-success']) !!}
+						</li>
 					@endif
 				</ul>
 			</div>
@@ -79,10 +74,12 @@
 					<ul class="hidden-xs">
 						<li class="footer-nav"><a href="#">Home</a></li>
 						<li class="footer-nav"><a href="#">FAQ</a></li>
-						<li class="footer-nav"><a href="#">Volunteer</a></li>
-						<li class="footer-nav"><a href="#">Support</a></li>
-						<li class="footer-nav"><a href="calendar">Calendar</a></li>
 						<li class="footer-nav"><a href="#">Contact</a></li>
+						@if (Auth::check())
+							<li class="footer-nav"><a href="/auth/logout">Logout</a></li>
+						@else
+							<li class="footer-nav"><a href="/login">Login</a></li>
+						@endif
 					</ul>
 					<br>
 					<p>roguebookexchange@gmail.com  |  110 N Ivy St, Medford, OR 97501  |  541-779-1326</p>

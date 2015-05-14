@@ -14,7 +14,7 @@
 Route::get('/', 'PagesController@index');
 Route::get('/login', 'PagesController@login');
 
-Route::post('/update-page', 'FormController@create');
+Route::post('/update-content', 'FormController@update_content');
 
 // Route::get('/forms/volunteer', 'FormController@signup');
 Route::get('/forms/{url}', 'FormController@show');
