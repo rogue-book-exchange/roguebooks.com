@@ -21,8 +21,6 @@ class PagesController extends Controller {
 				$page[$content['name']] = $content['content'];
 			}
 		}
-		// return $page;
-		// return var_dump(array_key_exists('hours-header', $page));
 		return view('pages.home', compact('page'));
 	}
 

@@ -23,6 +23,9 @@
 </head>
 <body>
 
+	{!! Form::open(['url'=>'/update-page', 'id'=>'page-update']) !!}
+	{!! Form::close() !!}
+
 	<div class="wide">
 		<img src="{{ asset('/images/rogue-book-exchange-header-image.png') }}">
 	</div>
@@ -49,9 +52,14 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::check())
-						<li><a href="/auth/logout">Save Changes & Logout</a></li>
+						@if (!empty($page))
+							<li class="navbar-btn">
+								{!! Form::submit('Save Changes', ['form'=>'page-update', 'class'=>'navbar-item btn-success']) !!}
+							</li>
+						@endif
+						<li class="navbar-item"><a href="/auth/logout">Logout</a></li>
 					@else
-						<li><a href="/login">Login</a></li>
+						<li class="navbar-item"><a href="/login">Login</a></li>
 					@endif
 				</ul>
 			</div>

@@ -5036,7 +5036,7 @@ a.list-group-item-danger.active:focus {
   padding: 15px;
 }
 .panel-heading {
-  padding: 10px 15px;
+  padding: 1px 15px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -5054,7 +5054,7 @@ a.list-group-item-danger.active:focus {
   color: inherit;
 }
 .panel-footer {
-  padding: 10px 15px;
+  padding: 1px 15px;
   background-color: #f5f5f5;
   border-top: 1px solid #dddddd;
   border-bottom-right-radius: 3px;
@@ -6313,6 +6313,10 @@ label,
 .panel-heading-border {
   border-bottom: 3px solid #bb9a6b;
   border-top: 3px solid #bb9a6b;
+}
+.panel-heading .panel-title h2 {
+  margin: 6px 0px;
+  font-size: 30px;
 }
 /*-----  End of Brown border for some of the blocks on the page  ------*/
 /*==================================================

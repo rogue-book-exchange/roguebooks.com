@@ -5,8 +5,6 @@ Home Page
 @endsection
 
 @section('content')
-  {!! Form::open(array('name'=>'page-form')) !!}
-  {!! Form::close() !!}
   <div class="row">
     <div class="col-sm-7">
       <div class="row visible-xs">
@@ -14,7 +12,7 @@ Home Page
           <!-- Content from database -->
           @if (array_key_exists('volunteer-text', $page))
             @if (Auth::check())
-              {!! Form::textarea('volunteer-text', $page['volunteer-text'], array('rows'=>'2', 'for'=>'page-form')) !!}
+              {!! Form::textarea('volunteer-text', $page['volunteer-text'], ['rows'=>'2', 'form'=>'page-update']) !!}
             @else
               <p>{{ $page['volunteer-text'] }}</p>
             @endif
@@ -27,7 +25,7 @@ Home Page
           <!-- Content from database -->
           @if (array_key_exists('donate-text', $page))
             @if (Auth::check())
-              {!! Form::textarea('donate-text', $page['donate-text'], array('rows'=>'2', 'for'=>'page-form')) !!}
+              {!! Form::textarea('donate-text', $page['donate-text'], ['rows'=>'2', 'form'=>'page-update']) !!}
             @else
               <p>{{ $page['donate-text'] }}</p>
             @endif
@@ -41,7 +39,7 @@ Home Page
           <!-- Content from database -->
           @if (array_key_exists('volunteer-text', $page))
             @if (Auth::check())
-              {!! Form::textarea('volunteer-text', $page['volunteer-text'], array('rows'=>'2', 'for'=>'page-form')) !!}
+              {!! Form::textarea('volunteer-text', $page['volunteer-text'], ['rows'=>'2', 'form'=>'page-update']) !!}
             @else
               <p>{{ $page['volunteer-text'] }}</p>
             @endif
@@ -52,7 +50,7 @@ Home Page
           <!-- Content from database -->
           @if (array_key_exists('donate-text', $page))
             @if (Auth::check())
-              {!! Form::textarea('donate-text', $page['donate-text'], array('rows'=>'2', 'for'=>'page-form')) !!}
+              {!! Form::textarea('donate-text', $page['donate-text'], ['rows'=>'2', 'form'=>'page-update']) !!}
             @else
               <p>{{ $page['donate-text'] }}</p>
             @endif
@@ -73,7 +71,7 @@ Home Page
         <div class="col-sm-12">
           @if (array_key_exists('body-intro-1', $page))
             @if (Auth::check())
-              {!! Form::textarea('body-intro-1', $page['body-intro-1'], array('rows'=>'4', 'for'=>'page-form')) !!}
+              {!! Form::textarea('body-intro-1', $page['body-intro-1'], ['rows'=>'4', 'form'=>'page-update']) !!}
             @else
               <p>{{ $page['body-intro-1'] }}</p>
             @endif
@@ -85,8 +83,8 @@ Home Page
         <div class="panel-body text-center">
           @if (array_key_exists('hours-header', $page) && array_key_exists('hours-body', $page))
             @if (Auth::check())
-              {!! Form::text('hours-header', $page['hours-header'], array('rows'=>'1', 'for'=>'page-form')) !!}
-              {!! Form::textarea('hours-body', $page['hours-body'], array('rows'=>'3', 'for'=>'page-form')) !!}
+              {!! Form::text('hours-header', $page['hours-header'], ['rows'=>'1', 'form'=>'page-update']) !!}
+              {!! Form::textarea('hours-body', $page['hours-body'], ['rows'=>'3', 'form'=>'page-update']) !!}
             @else
               <h3>{{ $page['hours-header'] }}</h3>
               <p>{{ $page['hours-body'] }}</p>
@@ -99,7 +97,7 @@ Home Page
         <div class="col-sm-12">
           @if (array_key_exists('body-intro-2', $page))
             @if (Auth::check())
-              {!! Form::textarea('body-intro-2', $page['body-intro-2'], array('rows'=>'6', 'for'=>'page-form')) !!}
+              {!! Form::textarea('body-intro-2', $page['body-intro-2'], ['rows'=>'6', 'form'=>'page-update']) !!}
             @else
               <p>{{ $page['body-intro-2'] }}</p>
             @endif
@@ -114,7 +112,7 @@ Home Page
             <div class="panel-title text-center">
               @if (array_key_exists('wish-list', $page))
                 @if (Auth::check())
-                  {!! Form::text('wish-list', $page['wish-list'], array('rows'=>'1', 'for'=>'page-form')) !!}
+                  {!! Form::text('wish-list', $page['wish-list'], ['rows'=>'1', 'form'=>'page-update']) !!}
                 @else
                   <h2>{{ $page['wish-list'] }}</h2>
                 @endif
@@ -125,7 +123,7 @@ Home Page
         <div class="panel-body">
           @if (array_key_exists('wish-list-body', $page))
             @if (Auth::check())
-              {!! Form::textarea('wish-list-body', $page['wish-list-body'], array('rows'=>'9', 'for'=>'page-form')) !!}
+              {!! Form::textarea('wish-list-body', $page['wish-list-body'], ['rows'=>'9', 'form'=>'page-update']) !!}
             @else
               <p>{{ $page['wish-list-body'] }}</p>
             @endif
@@ -144,7 +142,7 @@ Home Page
             <div class="panel-title text-center">
               @if (array_key_exists('new-on-amazon', $page))
                 @if (Auth::check())
-                  {!! Form::text('new-on-amazon', $page['new-on-amazon'], array('rows'=>'1','for'=>'page-form')) !!}
+                  {!! Form::text('new-on-amazon', $page['new-on-amazon'], ['rows'=>'1','form'=>'page-update']) !!}
                 @else
                   <h2>{{ $page['new-on-amazon'] }}</h2>
                 @endif

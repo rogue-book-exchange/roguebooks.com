@@ -3,8 +3,9 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use View;
+use App\Block;
 use App\Volunteer;
-use Illuminate\Http\Request;
+use Request;
 
 class FormController extends Controller {
 
@@ -25,7 +26,16 @@ class FormController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		$page_contents = Request::all();
+		array_shift($page_contents);
+		$keys = array_keys($page_contents);
+		array_shift($keys);
+		$values = array_values($page_contents);
+		array_shift($values);
+		foreach ($keys as $i => $key) {
+			Block::where('name','=',$key)->update(['content'=>$values[$i]]);
+		}
+		return redirect('/');
 	}
 
 	/**
