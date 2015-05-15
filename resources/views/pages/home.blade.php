@@ -140,23 +140,18 @@ Home Page
         <div class="panel-heading-border">
           <div class="panel-heading green-white-gradient">
             <div class="panel-title text-center">
-              @if (array_key_exists('new-on-amazon', $page))
+              @if (array_key_exists('google-maps', $page))
                 @if (Auth::check())
-                  {!! Form::text('new-on-amazon', $page['new-on-amazon'], ['rows'=>'1','form'=>'page-update']) !!}
+                  {!! Form::text('google-maps', $page['google-maps'], ['rows'=>'1','form'=>'page-update']) !!}
                 @else
-                  <h2>{{ $page['new-on-amazon'] }}</h2>
+                  <h2>{{ $page['google-maps'] }}</h2>
                 @endif
               @endif
             </div>
           </div>
         </div>
         <div class="panel-body">
-          <ul>
-            <li>Morbi in sem quis dui placerat ornare.</li>
-            <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</li>
-            <li>Phasellus ultrices nulla quis nibh.</li>
-            <li>Pellentesque fermentum dolor. </li>
-          </ul>
+          <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=110+North+Ivy+Street,+Medford,+OR&amp;aq=0&amp;oq=110+N+Ivy+Street+Medfor&amp;sll=44.145447,-120.583402&amp;sspn=4.753569,11.634521&amp;ie=UTF8&amp;hq=&amp;hnear=110+N+Ivy+St,+Medford,+Oregon+97501&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=110+North+Ivy+Street,+Medford,+OR&amp;aq=0&amp;oq=110+N+Ivy+Street+Medfor&amp;sll=44.145447,-120.583402&amp;sspn=4.753569,11.634521&amp;ie=UTF8&amp;hq=&amp;hnear=110+N+Ivy+St,+Medford,+Oregon+97501&amp;t=m&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
         </div>
       </div>
     </div>
