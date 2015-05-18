@@ -27,7 +27,9 @@
 	{!! Form::close() !!}
 
 	<div class="wide">
-		<img src="{{ asset('/images/rogue-book-exchange-header-image.png') }}">
+		<img src="{{ asset('/images/md-rogue-book-exchange-header-image.png') }}" class="hidden-sm hidden-xs">
+		<img src="{{ asset('/images/sm-rogue-book-exchange-header-image.png') }}" class="visible-sm">
+		<img src="{{ asset('/images/xs-rogue-book-exchange-header-image.png') }}" class="visible-xs">
 	</div>
 	<nav class="navbar navbar-default green-white-gradient">
 		<div class="container-fluid">
