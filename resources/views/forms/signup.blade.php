@@ -53,6 +53,7 @@
       be noisy and busy, making it difficult to concentrate from time to time.</p>
   <br>
   <h4>VOLUNTEER ASSIGNMENT PREFERENCES</h4>
+  <p>(Note: all assignments will be made according to ability as determined by management)</p>
   <p><strong>Book Processing:</strong></p>
   <p>
     {!! Form::checkbox('agree') !!}&nbsp;Straighten Shelves&nbsp;&nbsp;&nbsp;&nbsp;
@@ -91,7 +92,7 @@
     {!! Form::checkbox('agree') !!}&nbsp;Talent/Phoenix&nbsp;&nbsp;&nbsp;&nbsp;
     {!! Form::checkbox('agree') !!}&nbsp;Jacksonville/Applegate/Ruch&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
-  <br>I have an SUV, pickup truck or van that I'm willing to use:
+  <p>I have an SUV, pickup truck or van that I'm willing to use:</p>
   <p>
     {!! Form::checkbox('agree') !!}&nbsp;yes&nbsp;&nbsp;&nbsp;&nbsp;
     {!! Form::checkbox('agree') !!}&nbsp;no&nbsp;&nbsp;&nbsp;&nbsp;
@@ -107,7 +108,6 @@
     {!! Form::checkbox('agree') !!}&nbsp;Westerns&nbsp;&nbsp;&nbsp;&nbsp;
     {!! Form::checkbox('agree') !!}&nbsp;Science Fiction/Fantasy&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
-  <br>
   <p>
     {!! Form::checkbox('agree') !!}&nbsp;Religious/Spirituality&nbsp;&nbsp;&nbsp;&nbsp;
     {!! Form::checkbox('agree') !!}&nbsp;Teens/Tweens&nbsp;&nbsp;&nbsp;&nbsp;
