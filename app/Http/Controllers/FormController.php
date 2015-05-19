@@ -33,9 +33,13 @@ class FormController extends Controller {
 		$values = array_values($page_contents);
 		array_shift($values);
 		foreach ($keys as $i => $key) {
+			if (substr($key, 0, 7) == 'global-') {
+				$key = substr($key, 7);
+			}
 			Block::where('name','=',$key)->update(['content'=>$values[$i]]);
 		}
 		return redirect('/');
+		// return var_dump($page_contents);
 	}
 
 	/**
