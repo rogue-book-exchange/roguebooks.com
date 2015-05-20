@@ -11,11 +11,13 @@
     <div class="panel panel-success">
       <div class="panel-heading-border">
         <div class="panel-heading green-white-gradient">
-          <div class="panel-title text-center">
-          <h1>FAQs</h1>
-          @if (Auth::check())
-            <a href="{{ route('faqs.create') }}" class="btn btn-success yellow-white-gradient">Add Question</a>
-          @endif
+          <div class="panel-title">
+            <h2>
+              FAQs
+              @if (Auth::check())
+                <a href="{{ route('faqs.create') }}" class="btn btn-default pull-right">Add Question</a>
+              @endif
+            </h2>
           </div>
         </div>
       </div>
