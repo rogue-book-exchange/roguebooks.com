@@ -2,12 +2,14 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use View;
+
+use App\Faq;
+use App\Page;
 use App\Block;
-use App\Volunteer;
+
 use Request;
 
-class FormController extends Controller {
+class FaqController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -16,7 +18,14 @@ class FormController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$blocks = Block::where('page_id','=',0)->get();
+		$page = [];
+		foreach ($blocks as $block) {
+			$page['global-'.$block['name']] = $block['content'];
+		}
+		$faqs = Faq::get();
+		return view('faqs.index', compact('faqs', 'page'));
+		// return var_dump(count($faqs));
 	}
 
 	/**
@@ -24,22 +33,10 @@ class FormController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function update_content()
+	public function create()
 	{
-		$page_contents = Request::all();
-		array_shift($page_contents);
-		$keys = array_keys($page_contents);
-		array_shift($keys);
-		$values = array_values($page_contents);
-		array_shift($values);
-		foreach ($keys as $i => $key) {
-			if (substr($key, 0, 7) == 'global-') {
-				$key = substr($key, 7);
-			}
-			Block::where('name','=',$key)->update(['content'=>$values[$i]]);
-		}
-		return redirect('/');
-		// return var_dump($page_contents);
+		$faq = new Faq;
+		return view('faqs.create', compact('faq'));
 	}
 
 	/**
@@ -49,7 +46,8 @@ class FormController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		Faq::create(Request::all());
+		return redirect('faqs');
 	}
 
 	/**
@@ -58,16 +56,9 @@ class FormController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($url)
+	public function show($id)
 	{
-		if (View::exists('forms.'.$url))
-		{
-			$volunteer = Volunteer::find(1);
-			// return $volunteer;
-			return view('forms.' . $url, compact('volunteer'));
-		} else {
-			return redirect('/');
-		}
+		//
 	}
 
 	/**
@@ -78,7 +69,8 @@ class FormController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		$faq = Faq::findOrFail($id);
+		return view('faqs.edit', compact('faq'));
 	}
 
 	/**
@@ -89,7 +81,8 @@ class FormController extends Controller {
 	 */
 	public function update($id)
 	{
-		//
+		Faq::findOrFail($id)->update(Request::all());
+		return redirect('faqs');
 	}
 
 	/**
@@ -100,7 +93,8 @@ class FormController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		Faq::destroy($id);
+		return redirect('faqs');
 	}
 
 }

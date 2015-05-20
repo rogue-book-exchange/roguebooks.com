@@ -45,7 +45,7 @@
 			<div class="collapse navbar-collapse" id="mainNav">
 				<ul class="nav navbar-nav main-nav">
 					<li class="navbar-item"><a href="/">Home</a></li>
-					<li class="navbar-item"><a href="faq">FAQ</a></li>
+					<li class="navbar-item"><a href="faqs">FAQs</a></li>
 					<li class="navbar-item"><a href="volunteer">Volunteer</a></li>
 					<li class="navbar-item"><a href="support">Support</a></li>
 					<li class="navbar-item"><a href="calendar">Calendar</a></li>

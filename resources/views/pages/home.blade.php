@@ -7,65 +7,7 @@ Home Page
 @section('content')
   <div class="row">
     <div class="col-sm-7">
-      <div class="row visible-xs">
-        <div class="col-sm-6 text-center">
-          <!-- Content from database -->
-          @if (array_key_exists('volunteer-text', $page))
-            @if (Auth::check())
-              {!! Form::textarea('volunteer-text', $page['volunteer-text'], ['rows'=>'2', 'form'=>'page-update']) !!}
-            @else
-              <p>{{ $page['volunteer-text'] }}</p>
-            @endif
-          @endif
-          <a href="forms/signup" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
-          <!-- end content from database -->
-        </div>
-        <br>
-        <div class="col-sm-6 text-center">
-          <!-- Content from database -->
-          @if (array_key_exists('donate-text', $page))
-            @if (Auth::check())
-              {!! Form::textarea('donate-text', $page['donate-text'], ['rows'=>'2', 'form'=>'page-update']) !!}
-            @else
-              <p>{{ $page['donate-text'] }}</p>
-            @endif
-          @endif
-          @include('partials.paypal')
-          <!-- end content from database -->
-        </div>
-      </div>
-      <div class="row hidden-xs">
-        <div class="col-sm-6 text-center">
-          <!-- Content from database -->
-          @if (array_key_exists('volunteer-text', $page))
-            @if (Auth::check())
-              {!! Form::textarea('volunteer-text', $page['volunteer-text'], ['rows'=>'2', 'form'=>'page-update']) !!}
-            @else
-              <p>{{ $page['volunteer-text'] }}</p>
-            @endif
-          @endif
-          <!-- end content from database -->
-        </div>
-        <div class="col-sm-6 text-center">
-          <!-- Content from database -->
-          @if (array_key_exists('donate-text', $page))
-            @if (Auth::check())
-              {!! Form::textarea('donate-text', $page['donate-text'], ['rows'=>'2', 'form'=>'page-update']) !!}
-            @else
-              <p>{{ $page['donate-text'] }}</p>
-            @endif
-          @endif
-          <!-- end content from database -->
-        </div>
-      </div>
-      <div class="row hidden-xs">
-        <div class="col-sm-6 text-center">
-          <a href="forms/signup" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
-        </div>
-        <div class="col-sm-6 text-center">
-          @include('partials.paypal')
-        </div>
-      </div>
+      @include('partials.buttons')
       <br>
       <div class="row">
         <div class="col-sm-12">
@@ -106,6 +48,7 @@ Home Page
       </div>
     </div>
     <div class="col-sm-5">
+      @include('partials.email-signup')
       <div class="panel panel-success">
         <div class="panel-heading-border">
           <div class="panel-heading green-white-gradient">

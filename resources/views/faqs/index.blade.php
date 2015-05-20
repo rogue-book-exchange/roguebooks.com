@@ -5,7 +5,56 @@
 @stop
 
 @section('content')
-  <h1>FAQ</h1>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel panel-success">
+      <div class="panel-heading-border">
+        <div class="panel-heading green-white-gradient">
+          <div class="panel-title">
+            <h2>
+              FAQs
+              @if (Auth::check())
+                <a href="{{ route('faqs.create') }}" class="btn btn-default pull-right">Add Question</a>
+              @endif
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        @if (count($faqs))
+          @foreach ($faqs as $faq)
+          {!! Form::open(['route' => ['faqs.destroy', $faq->id], 'method' => 'delete', 'id'=>'destroy']) !!}
+          {!! Form::close() !!}
+            <h4>
+              {{ $faq->question }}
+              @if (Auth::check())
+                &nbsp;&nbsp;
+                |&nbsp;&nbsp;&nbsp;<a href="{{ route('faqs.edit', $faq->id) }}" class="btn btn-default">Edit</a>
+                &nbsp;&nbsp;
+                |&nbsp;&nbsp;&nbsp;{!! Form::submit('Delete', ['form'=>'destroy']) !!}
+              @endif
+            </h4>
+            <p>{{ $faq->answer }}</p>
+          @endforeach
+        @else
+          <h4>There are no FAQs</h4>
+        @endif
+      </div>
+    </div>
+  </div>
+</div>
+
+@include('partials.buttons')
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    @include('partials.email-signup')
+  </div>
+</div>
+
+
+  <!-- <h1>FAQ</h1>
 
   <h3>Where are you located?</h3>
     <p>We are located in downtown Medford on the NE corner of 6th and Ivy.</p>
@@ -63,5 +112,5 @@
       <dd>If you shop on Amazon, please link your Amazon account to RBE through Amazon Smile and Amazon will donate a small percentage of your purchases to us!</dd>
     <dt>Fred Meyer Rewards</dt>
       <dd>You can now support RBE by linking your Fred Meyer Rewards card to us! Click here and press the "Link Your Rewards Card Now" button. Link to non-profit number 94900.</dd>
-  </dl>
+  </dl> -->
 @stop

@@ -12,7 +12,11 @@
 */
 
 Route::get('/', 'PagesController@index');
+
 Route::get('/login', 'PagesController@login');
+
+// Route::get('faq', 'PagesController@faq');
+Route::resource('faqs', 'FaqController');
 
 Route::post('/update-content', 'FormController@update_content');
 
@@ -20,9 +24,10 @@ Route::post('/update-content', 'FormController@update_content');
 Route::get('/forms/{url}', 'FormController@show');
 
 // Route::get('/edit/{page_uri?}', 'FormController@load');
-Route::get('/{page_uri?}', 'PagesController@show');
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+  'auth' => 'Auth\AuthController',
+  'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('/{page_uri?}', 'PagesController@show');
