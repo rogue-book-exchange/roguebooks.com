@@ -18,7 +18,7 @@
     {!! Form::text('zip', null, ['placeholder' => 'Zip Code']) !!}
     {!! Form::text('emergency_contact', null, ['placeholder' => 'Emergency Contact Name & Phone #']) !!}
   <p><br><strong>Note:</strong> If you are applying to volunteer because you are a participant in a community 
-      jobs program (i.e. Job Council, Experience Works, Etc.), please provide the following information:</P>
+    jobs program (i.e. Job Council, Experience Works, Etc.), please provide the following information:</p>
     {!! Form::text('program', null, ['placeholder' => 'Program Name']) !!}
     {!! Form::text('program_contact', null, ['placeholder' => 'Program Contact Name & Phone #']) !!}
   <br>
@@ -34,18 +34,18 @@
   </p>
   <p><br>Volunteering:</p>
   <p>
-    {!! Form::checkbox('agree') !!}&nbsp;Long-term&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('agree') !!}&nbsp;Temporary(state number of weeks)&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('agree') !!}&nbsp;Long-term&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('agree') !!}&nbsp;Temporary(state number of weeks)&nbsp;&nbsp;&nbsp;&nbsp;
     {!! Form::text('weeks') !!}
   </p>
   <p><br>How often can you work?</p>
   <p>
-    {!! Form::checkbox('agree') !!}&nbsp;More frequently than weekly&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('agree') !!}&nbsp;Weekly&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('agree') !!}&nbsp;Biweekly&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('agree') !!}&nbsp;Monthly&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('agree') !!}&nbsp;More frequently than weekly&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('agree') !!}&nbsp;Weekly&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('agree') !!}&nbsp;Biweekly&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('agree') !!}&nbsp;Monthly&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
-  <br><br>
+  <br>
   <h4>PHYSICAL & SENSORY DEMANDS</h4>
   <p>The volunteer will need to be able to stand/walk in the process of packing and unpacking boxes of books 
       and stocking shelves. He/she may need to sit at a computer for periods of time. He/she may need to lift 
@@ -94,8 +94,8 @@
   </p>
   <p>I have an SUV, pickup truck or van that I'm willing to use:</p>
   <p>
-    {!! Form::checkbox('agree') !!}&nbsp;yes&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('agree') !!}&nbsp;no&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('agree') !!}&nbsp;yes&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('agree') !!}&nbsp;no&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
   <br>
   <p><br><strong>Tell us about yourself:</strong></p>
