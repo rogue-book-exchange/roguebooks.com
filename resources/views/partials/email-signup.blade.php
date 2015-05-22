@@ -14,9 +14,12 @@
   </div>
   <div class="panel-body text-center">
     {!! Form::open() !!}
-    {!! Form::text('email', null, ['placeholder'=>'bob@example.com']) !!}
-    <br />
-    {!! Form::submit('Subscribe', ['class'=>'btn btn-success yellow-white-gradient full-width']) !!}
+    <div class="pull-left">
+      {!! Form::text('email', null, ['class'=>'pull-left', 'placeholder'=>'bob@example.com']) !!}
+    </div>
+    <div class="pull-right">
+      {!! Form::submit('Subscribe', ['class'=>'btn btn-success yellow-white-gradient pull-right']) !!}
+    </div>
     {!! Form::close() !!}
   </div>
 </div>

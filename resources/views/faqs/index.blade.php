@@ -7,6 +7,15 @@
 @section('content')
 
 <div class="row">
+  <div class="col-sm-7">
+    @include('partials.buttons')
+  </div>
+  <div class="col-sm-5">
+    @include('partials.email-signup')
+  </div>
+</div>
+
+<div class="row">
   <div class="col-sm-12">
     <div class="panel panel-success">
       <div class="panel-heading-border">
@@ -42,14 +51,6 @@
         @endif
       </div>
     </div>
-  </div>
-</div>
-
-@include('partials.buttons')
-
-<div class="row">
-  <div class="col-sm-6 col-sm-offset-3">
-    @include('partials.email-signup')
   </div>
 </div>
 
