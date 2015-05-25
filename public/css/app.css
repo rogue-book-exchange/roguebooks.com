@@ -6302,6 +6302,10 @@ label,
   bottom: 0;
   left: 0;
 }
+.footer-form {
+  float: left;
+  list-style: none;
+}
 /*-----  End of Style for the full width footer  ------*/
 /*=======================================================================
 =            Brown border for some of the blocks on the page            =
@@ -6390,5 +6394,10 @@ a {
   border: 2px solid #023517;
   font-size: 30px;
   color: #000;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+  margin: 0;
+  font-size: 18px;
 }
 /*-----  End of Gradient styles for the nav and buttons  ------*/

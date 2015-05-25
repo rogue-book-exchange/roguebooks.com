@@ -20,6 +20,12 @@ Route::resource('faqs', 'FaqController');
 
 Route::post('/update-content', 'FormController@update_content');
 
+// Route::get('contact', 
+//   ['as' => 'contact', 'uses' => 'FormController@create']);
+
+Route::post('contact', 
+  ['as' => 'contact_store', 'uses' => 'FormController@store']);
+
 // Route::get('/forms/volunteer', 'FormController@signup');
 Route::get('/forms/{url}', 'FormController@show');
 

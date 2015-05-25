@@ -14,12 +14,18 @@
   </div>
   <div class="panel-body text-center">
     {!! Form::open() !!}
-    <div class="pull-left">
-      {!! Form::text('email', null, ['class'=>'pull-left', 'placeholder'=>'bob@example.com']) !!}
-    </div>
-    <div class="pull-right">
-      {!! Form::submit('Subscribe', ['class'=>'btn btn-success yellow-white-gradient pull-right']) !!}
-    </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          {!! Form::text('email', null, ['placeholder'=>'your_email@example.com']) !!}
+        </div>
+
+
+        <div class="col-sm-4">
+          {!! Form::submit('Subscribe', ['class'=>'btn btn-success full-width btn-sm yellow-white-gradient pull-right']) !!}
+        </div>
+      </div>
+
     {!! Form::close() !!}
   </div>
 </div>
