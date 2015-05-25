@@ -20,3 +20,7 @@
 		</div>
 	</div>
 @stop
+
+@section('footer')
+	@include('partials.footer')
+@stop

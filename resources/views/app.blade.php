@@ -69,26 +69,8 @@
 	</div>
 	
 	<br>
-	<div class="container container-full brown-border-top">
-		<div class="row green-white-gradient">
-			<div class="col-sm-12">
-				<span class="pull-right">
-					<ul class="hidden-xs">
-						<li class="footer-nav"><a href="#">Home</a></li>
-						<li class="footer-nav"><a href="#">FAQ</a></li>
-						<li class="footer-nav"><a href="#">Contact</a></li>
-						@if (Auth::check())
-							<li class="footer-nav"><a href="/auth/logout">Logout</a></li>
-						@else
-							<li class="footer-nav"><a href="/login">Login</a></li>
-						@endif
-					</ul>
-					<br>
-					<p>roguebookexchange@gmail.com  |  110 N Ivy St, Medford, OR 97501  |  541-779-1326</p>
-				</span>
-			</div>
-		</div>
-	</div>
+	
+	@yield('footer')
 
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

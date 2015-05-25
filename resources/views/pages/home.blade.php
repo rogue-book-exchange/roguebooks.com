@@ -8,7 +8,6 @@ Home Page
   <div class="row">
     <div class="col-sm-7">
       @include('partials.buttons')
-      <br>
       <div class="row">
         <div class="col-sm-12">
           @if (array_key_exists('body-intro-1', $page))
@@ -94,3 +93,7 @@ Home Page
     </div>
   </div>
 @endsection
+
+@section('footer')
+  @include('partials.footer')
+@stop

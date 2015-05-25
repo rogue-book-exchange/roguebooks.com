@@ -30,7 +30,11 @@ class PagesController extends Controller {
 	
 	public function login()
 	{
-		return view('auth.login');
+		$blocks = Block::where('page_id','=',0)->get();
+		foreach ($blocks as $block) {
+			$page['global-'.$block['name']] = $block['content'];
+		}
+		return view('auth.login', compact('page'));
 	}
 
 	
@@ -44,11 +48,11 @@ class PagesController extends Controller {
 			foreach ($contents as $content) {
 				$page[$content['name']] = $content['content'];
 			}
-			$blocks = Block::where('page_id','=',0)->get();
-			foreach ($blocks as $block) {
-				$page['global-'.$block['name']] = $block['content'];
-			}
     }
+		$blocks = Block::where('page_id','=',0)->get();
+		foreach ($blocks as $block) {
+			$page['global-'.$block['name']] = $block['content'];
+		}
     return $page;
 	}
 
