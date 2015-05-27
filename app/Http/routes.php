@@ -26,6 +26,9 @@ Route::post('/update-content', 'FormController@update_content');
 Route::post('contact', 
   ['as' => 'contact_store', 'uses' => 'FormController@store']);
 
+Route::post('volunteer', 
+  ['uses' => 'VolunteersController@store']);
+
 // Route::get('/forms/volunteer', 'FormController@signup');
 Route::get('/forms/{url}', 'FormController@show');
 

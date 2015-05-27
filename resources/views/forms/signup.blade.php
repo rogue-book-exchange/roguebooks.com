@@ -5,7 +5,27 @@
 @stop
 
 @section('content')
-  {!! Form::open() !!}
+@if(Session::has('message'))
+ <div class="alert alert-info">
+   {{Session::get('message')}}
+ </div>
+@endif
+@if($errors->all())
+<div class="row">
+ <div class="col-sm-12">
+   <div class="panel panel-danger">
+     <div class="panel-body">
+       <ul>
+       @foreach($errors->all() as $error)
+       <li>{{ $error }}</li>
+       @endforeach
+       </ul>
+     </div>
+   </div>
+ </div>
+</div>
+@endif
+  {!! Form::open(['url'=>'volunteer']) !!}
   <h3>VOLUNTEER APPLICATION</h3>
   <h4>CONTACT INFORMATION</h4>
     {!! Form::text('first_name', null, ['placeholder' => 'First Name']) !!}
@@ -15,7 +35,7 @@
     {!! Form::text('secondary_phone', null, ['placeholder' => 'Secondary Phone']) !!}
     {!! Form::text('address', null, ['placeholder' => 'Address']) !!}
     {!! Form::text('city', null, ['placeholder' => 'City']) !!}
-    {!! Form::text('zip', null, ['placeholder' => 'Zip Code']) !!}
+    {!! Form::text('zip_code', null, ['placeholder' => 'Zip Code']) !!}
     {!! Form::text('emergency_name', null, ['placeholder' => 'Emergency Contact Name']) !!}
     {!! Form::text('emergency_phone', null, ['placeholder' => 'Emergency Contact Phone #']) !!}
   <p><br><strong>Note:</strong> If you are applying to volunteer because you are a participant in a community 
