@@ -39,9 +39,9 @@
   </p>
   <p><br>Volunteering:</p>
   <p>
-    {!! Form::radio('duration', 'Long Term') !!}&nbsp;Long-term&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::radio('duration', 'Temporary') !!}&nbsp;Temporary(state number of weeks if known)&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::text('number_weeks') !!}
+    {!! Form::radio('time_commitment', 'Long Term') !!}&nbsp;Long-term&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('time_commitment', 'Temporary') !!}&nbsp;Temporary(state number of weeks if known)&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::text('commitment_weeks') !!}
   </p>
   <p><br>How often can you work?</p>
   <p>
