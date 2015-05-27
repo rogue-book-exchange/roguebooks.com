@@ -16,11 +16,13 @@
     {!! Form::text('address', null, ['placeholder' => 'Address']) !!}
     {!! Form::text('city', null, ['placeholder' => 'City']) !!}
     {!! Form::text('zip', null, ['placeholder' => 'Zip Code']) !!}
-    {!! Form::text('emergency_contact', null, ['placeholder' => 'Emergency Contact Name & Phone #']) !!}
+    {!! Form::text('emergency_name', null, ['placeholder' => 'Emergency Contact Name']) !!}
+    {!! Form::text('emergency_phone', null, ['placeholder' => 'Emergency Contact Phone #']) !!}
   <p><br><strong>Note:</strong> If you are applying to volunteer because you are a participant in a community 
     jobs program (i.e. Job Council, Experience Works, Etc.), please provide the following information:</p>
     {!! Form::text('program', null, ['placeholder' => 'Program Name']) !!}
-    {!! Form::text('program_contact', null, ['placeholder' => 'Program Contact Name & Phone #']) !!}
+    {!! Form::text('program_name', null, ['placeholder' => 'Program Contact Name']) !!}
+    {!! Form::text('program_phone', null, ['placeholder' => 'Program Contact Phone #']) !!}
   <br>
   <h4>AVAILABILITY FOR SERVICE</h4>
   <p>I am available to work beginning:</p>
@@ -128,6 +130,6 @@
   <p>Please be aware that our need for additional Bookstore volunteers fluctuates and we attempt to match applicants 
     with openings based on their hours of availability, areas of interest and physical capablilities. Thank you for 
     your interest.</p>
-  {!! Form::submit('Submit Form', ['class' => 'btn btn-primary form-control']) !!}
+  {!! Form::submit('Submit Form', ['class' => 'btn btn-default form-control']) !!}
   {!! Form::close() !!}
 @stop
