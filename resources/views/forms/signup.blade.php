@@ -46,7 +46,7 @@
   <br>
   <h4>AVAILABILITY FOR SERVICE</h4>
   <p>I am available to work beginning:</p>
-    {!! Form::input('start_date', 'start_date', null, ['class' => 'form-control']) !!}
+    {!! Form::input('date', 'start_date', null, ['class' => 'form-control']) !!}
   <p><br>Please indicate your preferences for days and hours to volunteer:</p>
   <p>
     {!! Form::checkbox('weekday_group[]', 'sunday') !!}&nbsp;Sunday&nbsp;&nbsp;&nbsp;&nbsp;
