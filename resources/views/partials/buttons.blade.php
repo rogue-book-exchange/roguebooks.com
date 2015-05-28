@@ -8,7 +8,7 @@
         <p>{{ $page['global-volunteer-text'] }}</p>
       @endif
     @endif
-    <a href="forms/signup" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
+    <a href="volunteer" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
     <!-- end content from database -->
   </div>
   <br>

@@ -18,7 +18,7 @@ Route::get('/login', 'PagesController@login');
 // Route::get('faq', 'PagesController@faq');
 Route::resource('faqs', 'FaqController');
 
-Route::post('/update-content', 'FormController@update_content');
+Route::post('/update-content', 'PagesController@update_content');
 
 // Route::get('contact', 
 //   ['as' => 'contact', 'uses' => 'FormController@create']);
@@ -28,9 +28,6 @@ Route::post('contact',
 
 Route::post('volunteer', 
   ['uses' => 'VolunteersController@store']);
-
-// Route::get('/forms/volunteer', 'FormController@signup');
-Route::get('/forms/{url}', 'FormController@show');
 
 // Route::get('/edit/{page_uri?}', 'FormController@load');
 

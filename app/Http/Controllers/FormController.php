@@ -21,29 +21,7 @@ class FormController extends Controller {
 	{
 		//
 	}
-
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
-	public function update_content()
-	{
-		$page_contents = Request::all();
-		array_shift($page_contents);
-		$keys = array_keys($page_contents);
-		array_shift($keys);
-		$values = array_values($page_contents);
-		array_shift($values);
-		foreach ($keys as $i => $key) {
-			if (substr($key, 0, 7) == 'global-') {
-				$key = substr($key, 7);
-			}
-			Block::where('name','=',$key)->update(['content'=>$values[$i]]);
-		}
-		return redirect('/');
-		// return var_dump($page_contents);
-	}
+	
 
 	/**
 	 * Store a newly created resource in storage.
@@ -79,14 +57,7 @@ class FormController extends Controller {
 	 */
 	public function show($url)
 	{
-		if (View::exists('forms.'.$url))
-		{
-			$volunteer = Volunteer::find(1);
-			// return $volunteer;
-			return view('forms.' . $url, compact('volunteer'));
-		} else {
-			return redirect('/');
-		}
+		//
 	}
 
 	/**

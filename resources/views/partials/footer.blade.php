@@ -27,11 +27,19 @@
           </li>
         @else
         <p>
-          <a href="mailto:{{ $page['global-footer-email'] }}">
-            {{ $page['global-footer-email'] }}
-          </a>
-          | {{ $page['global-footer-address'] }}
-          | {{ $page['global-footer-phone'] }}
+          @if (array_key_exists('global-footer-email', $page))
+            <a href="mailto:{{ $page['global-footer-email'] }}">
+              {{ $page['global-footer-email'] }}
+            </a>
+          @endif
+          | 
+          @if (array_key_exists('global-footer-address', $page))
+            {{ $page['global-footer-address'] }}
+          @endif
+          | 
+          @if (array_key_exists('global-footer-phone', $page))
+            {{ $page['global-footer-phone'] }}
+          @endif
         </p>
         @endif 
       </span>

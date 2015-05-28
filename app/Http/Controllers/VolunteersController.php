@@ -45,7 +45,7 @@ class VolunteersController extends Controller {
     }
     Volunteer::create($data);
 //     return '<pre>' . var_export($vol, true) . '</pre>';
-    return redirect('forms.signup')->with('message', 'Thank you for your interest in volunteering!');
+    return redirect('/volunteer')->with('message', 'Thank you for your interest in volunteering!');
 	}
 
 	/**

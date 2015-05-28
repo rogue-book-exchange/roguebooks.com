@@ -70,6 +70,23 @@ Home Page
               <p>{{ $page['wish-list-body'] }}</p>
             @endif
           @endif
+          {!! Form::open() !!}
+
+            <!-- Name of item  -->
+            <div class="form-group">
+              {!! Form::label('ItemName', 'Item Name:') !!}
+              {!! Form::text('ItemName', null, ['class' => 'form-control']) !!}
+            </div>
+            <!-- Description of Item -->
+            <div class="form-group">
+              {!! form::label('ItemDescription', 'Item Description:') !!}
+              {!! Form::text('ItemDescription', null, ['class' => 'form-control']) !!}
+            </div>
+            <!-- Button for submission  -->
+            <div class="form-group">
+              {!! Form::submit('Submit Materials', ['class' => 'btn btn-primary form-control']) !!}
+            </div>
+          {!! Form::close() !!}
         </div>
       </div>
       <div class="panel panel-success">

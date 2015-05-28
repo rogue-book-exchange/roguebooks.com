@@ -25,7 +25,7 @@
  </div>
 </div>
 @endif
-  {!! Form::open(['url'=>'volunteer']) !!}
+  {!! Form::open(['url'=>'/volunteer']) !!}
   <h3>VOLUNTEER APPLICATION</h3>
   <h4>CONTACT INFORMATION</h4>
     {!! Form::text('first_name', null, ['placeholder' => 'First Name']) !!}

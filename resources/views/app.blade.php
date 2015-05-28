@@ -63,8 +63,19 @@
 
 		</div>
 	</nav>
+
 	
 	<div class="container">
+		@if(Session::has('update'))
+		 <div class="row">
+		 	<div class="col-sm-12">
+		 		<div class="alert alert-success text-center">
+		 		  {{Session::get('update')}}
+		 		</div>
+		 	</div>
+		 </div>
+		@endif
+
 		@yield('content')
 	</div>
 	
