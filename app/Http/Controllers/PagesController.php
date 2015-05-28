@@ -5,6 +5,7 @@ use View;
 use App\Http\Controllers\Controller;
 use App\Page;
 use App\Block;
+use App\Faq;
 use App\Http\Requests\PageUpdateRequest;
 
 use Illuminate\Http\Request;
@@ -17,17 +18,54 @@ class PagesController extends Controller {
 		// return $page;
 		return view('pages.home', compact('page'));
 	}
-
-	public function show($page_uri)
+	
+	public function faqs()
 	{
-		if (View::exists('pages.'.$page_uri))
-		{
-			$page = get_page_contents($page_uri);
-			return view('pages.' . $page_uri, compact('page'));
-		} else {
-			return redirect('/');
-		}
+		$page = get_page_contents('faqs');
+		$faqs = Faq::get();
+		return view('faqs.index', compact('faqs', 'page'));
 	}
+	
+	public function volunteer()
+	{
+		$page = get_page_contents('volunteer');
+		return view('pages.volunteer', compact('page'));
+	}
+	
+	public function calendar()
+	{
+		$page = get_page_contents('calendar');
+		return view('pages.calendar', compact('page'));
+	}
+	
+	public function tour()
+	{
+		$page = get_page_contents('tour');
+		return view('pages.tour', compact('page'));
+	}
+	
+	public function support()
+	{
+		$page = get_page_contents('support');
+		return view('pages.support', compact('page'));
+	}
+
+	public function contact()
+	{
+		$page = get_page_contents('contact');
+		return view('pages.contact', compact('page'));
+	}
+
+	// public function show($page_uri)
+	// {
+	// 	if (View::exists('pages.'.$page_uri))
+	// 	{
+	// 		$page = get_page_contents($page_uri);
+	// 		return view('pages.' . $page_uri, compact('page'));
+	// 	} else {
+	// 		return redirect('/');
+	// 	}
+	// }
 
 	public function update_content(PageUpdateRequest $request)
 	{
@@ -49,7 +87,7 @@ class PagesController extends Controller {
 	
 	public function login()
 	{
-		$page = get_global_blocks();
+		$page = get_page_contents('login');
 		return view('auth.login', compact('page'));
 	}
 

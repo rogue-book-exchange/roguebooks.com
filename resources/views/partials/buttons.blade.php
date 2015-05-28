@@ -51,7 +51,7 @@
 </div>
 <div class="row hidden-xs">
   <div class="col-sm-6 text-center">
-    <a href="forms/signup" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
+    <a href="volunteer" class="btn btn-success yellow-white-gradient full-width">Volunteer</a>
   </div>
   <div class="col-sm-6 text-center">
     @include('partials.paypal')

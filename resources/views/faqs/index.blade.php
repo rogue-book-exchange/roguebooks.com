@@ -115,3 +115,7 @@
       <dd>You can now support RBE by linking your Fred Meyer Rewards card to us! Click here and press the "Link Your Rewards Card Now" button. Link to non-profit number 94900.</dd>
   </dl> -->
 @stop
+
+@section('footer')
+  @include('partials.footer')
+@stop

@@ -13,10 +13,19 @@
 
 Route::get('/', 'PagesController@index');
 
+Route::get('faqs', 'PagesController@faqs');
+Route::get('support', 'PagesController@support');
+Route::get('contact', 'PagesController@contact');
+Route::get('calendar', 'PagesController@calendar');
+Route::get('tour', 'PagesController@tour');
+Route::get('volunteer', 'PagesController@volunteer');
+
+
 Route::get('/login', 'PagesController@login');
 
 // Route::get('faq', 'PagesController@faq');
-Route::resource('faqs', 'FaqController');
+Route::resource('faqs', 'FaqController',
+  ['except'=>['index', 'show']]);
 
 Route::post('/update-content', 'PagesController@update_content');
 
@@ -36,4 +45,4 @@ Route::controllers([
   'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('/{page_uri?}', 'PagesController@show');
+// Route::get('/{page_uri?}', 'PagesController@show');

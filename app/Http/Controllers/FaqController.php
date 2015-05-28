@@ -12,23 +12,6 @@ use Request;
 class FaqController extends Controller {
 
 	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		$blocks = Block::where('page_id','=',0)->get();
-		$page = [];
-		foreach ($blocks as $block) {
-			$page['global-'.$block['name']] = $block['content'];
-		}
-		$faqs = Faq::get();
-		return view('faqs.index', compact('faqs', 'page'));
-		// return var_dump(count($faqs));
-	}
-
-	/**
 	 * Show the form for creating a new resource.
 	 *
 	 * @return Response
@@ -48,17 +31,6 @@ class FaqController extends Controller {
 	{
 		Faq::create(Request::all());
 		return redirect('faqs');
-	}
-
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
 	}
 
 	/**
