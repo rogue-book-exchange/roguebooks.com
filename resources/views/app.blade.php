@@ -45,12 +45,26 @@
 			<div class="collapse navbar-collapse" id="mainNav">
 				<ul class="nav navbar-nav main-nav">
 					<li class="navbar-item"><a href="/">Home</a></li>
-					<li class="navbar-item"><a href="faqs">FAQs</a></li>
-					<li class="navbar-item"><a href="volunteer">Volunteer</a></li>
-					<li class="navbar-item"><a href="support">Support</a></li>
-					<li class="navbar-item"><a href="calendar">Calendar</a></li>
-					<li class="navbar-item"><a href="contact">Contact</a></li>
-          <li class="navbar-item"><a href="tour">Tour</a></li>
+					<!-- <li class="navbar-item"><a href="volunteer">Volunteer</a></li> -->
+					<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Get Involved <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+							<li class="navbar-item"><a href="/support">Support</a></li>
+							<li class="divider"></li>
+							<li class="navbar-item"><a href="/volunteer">Volunteer</a></li>
+	          </ul>
+	        </li>
+					<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Find out More! <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+		          <li class="navbar-item"><a href="/faqs">FAQs</a></li>
+	            <li class="divider"></li>
+	            <li class="navbar-item"><a href="/calendar">Calendar</a></li>
+	            <li class="divider"></li>
+	            <li class="navbar-item"><a href="/tour">Tour</a></li>
+	          </ul>
+	        </li>
+					<li class="navbar-item"><a href="/contact">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::check() && !empty($page))
