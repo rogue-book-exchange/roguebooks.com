@@ -20,6 +20,9 @@ Route::get('calendar', 'PagesController@calendar');
 Route::get('tour', 'PagesController@tour');
 Route::get('volunteer', 'PagesController@volunteer');
 
+Route::resource('volunteers', 'VolunteersController',
+  ['only'=>['index', 'show', 'destroy']]);
+
 
 Route::get('/login', 'PagesController@login');
 

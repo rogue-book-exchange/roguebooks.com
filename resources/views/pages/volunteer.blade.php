@@ -49,13 +49,13 @@
     {!! Form::input('date', 'start_date', null, ['class' => 'form-control']) !!}
   <p><br>Please indicate your preferences for days and hours to volunteer:</p>
   <p>
-    {!! Form::checkbox('weekday_group[]', 'sunday') !!}&nbsp;Sunday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'monday') !!}&nbsp;Monday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'tuesday') !!}&nbsp;Tuesday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'wednesday') !!}&nbsp;Wednesday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'thursday') !!}&nbsp;Thursday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'friday') !!}&nbsp;Friday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'saturday') !!}&nbsp;Saturday&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::checkbox('weekday_group[]', 'Sunday') !!}&nbsp;Sunday&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::checkbox('weekday_group[]', 'Monday') !!}&nbsp;Monday&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::checkbox('weekday_group[]', 'Tuesday') !!}&nbsp;Tuesday&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::checkbox('weekday_group[]', 'Wednesday') !!}&nbsp;Wednesday&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::checkbox('weekday_group[]', 'Thursday') !!}&nbsp;Thursday&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::checkbox('weekday_group[]', 'Friday') !!}&nbsp;Friday&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::checkbox('weekday_group[]', 'Saturday') !!}&nbsp;Saturday&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
   <p><br>Volunteering:</p>
   <p>
@@ -119,8 +119,8 @@
   </p>
   <p>I have an SUV, pickup truck or van that I'm willing to use:</p>
   <p>
-    {!! Form::radio('has_vehicle') !!}&nbsp;yes&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::radio('has_vehicle') !!}&nbsp;no&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('has_vehicle', 'Yes') !!}&nbsp;yes&nbsp;&nbsp;&nbsp;&nbsp;
+    {!! Form::radio('has_vehicle', 'No') !!}&nbsp;no&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
   <br>
   <p><br><strong>Tell us about yourself:</strong></p>

@@ -4,6 +4,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Volunteer extends Model {
 
+  protected $table = 'volunteers';
+
   public $timestamps = false;
 
   protected $fillable = [

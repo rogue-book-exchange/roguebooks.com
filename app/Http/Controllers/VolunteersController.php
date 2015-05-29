@@ -17,7 +17,10 @@ class VolunteersController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$volunteers = Volunteer::all();
+		// return var_dump($volunteers);
+		$page = get_page_contents();
+		return view('volunteers.index', compact('page', 'volunteers'));
 	}
 
 	/**
@@ -56,7 +59,22 @@ class VolunteersController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		$v = Volunteer::find($id);
+		// $volunteer->each(function($vol)
+		// {
+		// 		if (is_serialized($vol)) {
+		// 			$volunteer[$i] = unserialize($vol);
+		// 		}
+		// })
+		// foreach ($volunteer as $i => $vol) {
+		// 	if (is_serialized($vol)) {
+		// 		$volunteer[$i] = unserialize($vol);
+		// 	}
+		// }
+		// return '<pre>' . var_export($volunteer, true) . '</pre>';
+		// return var_dump($volunteer);
+		$page = get_page_contents();
+		return view('volunteers.show', compact('v', 'page'));
 	}
 
 	/**
