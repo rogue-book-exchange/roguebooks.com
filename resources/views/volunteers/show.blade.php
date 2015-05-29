@@ -13,7 +13,7 @@
       <p>Email: {{ $v->email }}</p>
       <p>
         Primary Phone: {{ $v->primary_phone }}
-        @if ($v)
+        @if ($v->secondary_phone)
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secondary Phone: {{ $v->secondary_phone }}
         @endif
       </p>
