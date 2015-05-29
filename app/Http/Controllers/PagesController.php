@@ -56,17 +56,6 @@ class PagesController extends Controller {
 		return view('pages.contact', compact('page'));
 	}
 
-	// public function show($page_uri)
-	// {
-	// 	if (View::exists('pages.'.$page_uri))
-	// 	{
-	// 		$page = get_page_contents($page_uri);
-	// 		return view('pages.' . $page_uri, compact('page'));
-	// 	} else {
-	// 		return redirect('/');
-	// 	}
-	// }
-
 	public function update_content(PageUpdateRequest $request)
 	{
 		$page_contents = $request->all();
