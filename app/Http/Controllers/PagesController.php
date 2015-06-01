@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Page;
 use App\Block;
 use App\Faq;
+use App\User;
 use App\Http\Requests\PageUpdateRequest;
 
 use Illuminate\Http\Request;
@@ -54,6 +55,13 @@ class PagesController extends Controller {
 	{
 		$page = get_page_contents('contact');
 		return view('pages.contact', compact('page'));
+	}
+
+	public function admin()
+	{
+		$page = get_page_contents();
+		$user = User::all();
+		return view('pages.admin', compact('user', 'page'));
 	}
 
 	public function update_content(PageUpdateRequest $request)

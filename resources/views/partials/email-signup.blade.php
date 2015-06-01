@@ -16,13 +16,13 @@
     {!! Form::open() !!}
 
       <div class="row">
-        <div class="col-sm-8">
-          {!! Form::text('email', null, ['placeholder'=>'your_email@example.com']) !!}
+        <div class="col-sm-7">
+          {!! Form::text('email', null, ['placeholder'=>'email@example.com']) !!}
         </div>
 
 
-        <div class="col-sm-4">
-          {!! Form::submit('Subscribe', ['class'=>'btn btn-success full-width btn-sm yellow-white-gradient pull-right']) !!}
+        <div class="col-sm-4 col-sm-offset-1">
+          {!! Form::submit('Subscribe', ['class'=>'btn btn-success btn-sm yellow-white-gradient pull-right']) !!}
         </div>
       </div>
 
