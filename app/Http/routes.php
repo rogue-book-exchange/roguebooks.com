@@ -20,15 +20,20 @@ Route::get('calendar', 'PagesController@calendar');
 Route::get('tour', 'PagesController@tour');
 Route::get('volunteer', 'PagesController@volunteer');
 
-Route::resource('volunteers', 'VolunteersController',
-  ['only'=>['index', 'show', 'destroy']]);
+Route::get('admin', 'PagesController@admin');
+
+$router->group(['middleware' => 'auth'], function() {
+  Route::resource('volunteers', 'VolunteersController',
+    ['only'=>['index', 'show', 'destroy']]);
+  Route::resource('faqs', 'FaqController',
+    ['except'=>['index', 'show']]);
+});
 
 
 Route::get('/login', 'PagesController@login');
 
 // Route::get('faq', 'PagesController@faq');
-Route::resource('faqs', 'FaqController',
-  ['except'=>['index', 'show']]);
+
 
 Route::post('/update-content', 'PagesController@update_content');
 
