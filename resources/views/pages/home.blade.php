@@ -70,6 +70,9 @@ Home Page
                   <td>{{ $item->name }}</td>
                   @if (Auth::check())
                     <td>
+                      {!! Html::linkRoute('wishlists.edit', 'Edit', $item->id, ['class'=>'btn btn-default']) !!}
+                    </td>
+                    <td>
                       {!! Form::open(['route'=>['wishlists.destroy', $item->id], 'method'=>'delete']) !!}
                       {!! Form::submit('Delete') !!}
                       {!! Form::close() !!}
