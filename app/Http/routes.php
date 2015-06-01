@@ -27,6 +27,8 @@ $router->group(['middleware' => 'auth'], function() {
     ['only'=>['index', 'show', 'destroy']]);
   Route::resource('faqs', 'FaqController',
     ['except'=>['index', 'show']]);
+  Route::resource('wishlists', 'WishListController',
+    ['except'=>['index']]);
 });
 
 

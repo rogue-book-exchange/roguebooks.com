@@ -63,15 +63,24 @@ Home Page
           </div>
         </div>
         <div class="panel-body">
-          @if (array_key_exists('wish-list-body', $page))
-            @if (Auth::check())
-              {!! Form::textarea('wish-list-body', $page['wish-list-body'], ['rows'=>'9', 'form'=>'page-update']) !!}
-            @else
-              <p>{{ $page['wish-list-body'] }}</p>
-            @endif
-          @endif
+          <table class="table table-striped">
+            <tbody>
+              @foreach ($wishlistitems as $item)
+                <tr>
+                  <td>{{ $item->name }}</td>
+                  @if (Auth::check())
+                    <td>
+                      {!! Form::open(['route'=>['wishlists.destroy', $item->id], 'method'=>'delete']) !!}
+                      {!! Form::submit('Delete') !!}
+                      {!! Form::close() !!}
+                    </td>
+                  @endif
+                </tr>
+              @endforeach
+            </tbody>
+          </table>
           @if (Auth::check())
-            {!! Form::open() !!}
+            {!! Form::open(['route'=>'wishlists.store']) !!}
             <!-- Name of item  -->
             <div class="form-group">
               {!! Form::label('name', 'Item Name:') !!}

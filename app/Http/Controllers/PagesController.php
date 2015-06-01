@@ -7,6 +7,7 @@ use App\Page;
 use App\Block;
 use App\Faq;
 use App\User;
+use App\Wishlist;
 use App\Http\Requests\PageUpdateRequest;
 
 use Illuminate\Http\Request;
@@ -16,8 +17,9 @@ class PagesController extends Controller {
 	public function index()
 	{
 		$page = get_page_contents('home');
+		$wishlistitems = Wishlist::all();
 		// return $page;
-		return view('pages.home', compact('page'));
+		return view('pages.home', compact('page', 'wishlistitems'));
 	}
 	
 	public function faqs()

@@ -3,7 +3,7 @@
 use App\Http\Requests\Request;
 use Auth;
 
-class PageUpdateRequest extends Request {
+class WishListRequest extends Request {
 
 	/**
 	 * Determine if the user is authorized to make this request.
@@ -27,7 +27,7 @@ class PageUpdateRequest extends Request {
 	public function rules()
 	{
 		return [
-			//
+			'name'=>'required'
 		];
 	}
 
