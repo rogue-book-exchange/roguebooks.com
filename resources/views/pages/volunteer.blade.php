@@ -25,134 +25,297 @@
  </div>
 </div>
 @endif
-  {!! Form::open(['url'=>'/volunteer']) !!}
-  <h3>VOLUNTEER APPLICATION</h3>
-  <h4>CONTACT INFORMATION</h4>
-    {!! Form::text('first_name', null, ['placeholder' => 'First Name']) !!}
-    {!! Form::text('last_name', null, ['placeholder' => 'Last Name']) !!}
-    {!! Form::text('email', null, ['placeholder' => 'Email']) !!}
-    {!! Form::text('primary_phone', null, ['placeholder' => 'Primary Phone']) !!}
-    {!! Form::text('secondary_phone', null, ['placeholder' => 'Secondary Phone']) !!}
-    {!! Form::text('address', null, ['placeholder' => 'Address']) !!}
-    {!! Form::text('city', null, ['placeholder' => 'City']) !!}
-    {!! Form::text('zip_code', null, ['placeholder' => 'Zip Code']) !!}
-    {!! Form::text('emergency_name', null, ['placeholder' => 'Emergency Contact Name']) !!}
-    {!! Form::text('emergency_phone', null, ['placeholder' => 'Emergency Contact Phone #']) !!}
-  <p><br><strong>Note:</strong> If you are applying to volunteer because you are a participant in a community 
-    jobs program (i.e. Job Council, Experience Works, Etc.), please provide the following information:</p>
-    {!! Form::text('program', null, ['placeholder' => 'Program Name']) !!}
-    {!! Form::text('program_name', null, ['placeholder' => 'Program Contact Name']) !!}
-    {!! Form::text('program_phone', null, ['placeholder' => 'Program Contact Phone #']) !!}
+  
+  <div class="row">
+    <span class="text-center">
+      <h3>VOLUNTEER APPLICATION</h3>
+      <h4>CONTACT INFORMATION</h4>
+    </span>
+    <br />
+    <div class="col-sm-6">
+      {!! Form::open(['url'=>'/volunteer']) !!}
+      {!! Form::text('first_name', null, ['placeholder' => 'First Name']) !!}
+      {!! Form::text('last_name', null, ['placeholder' => 'Last Name']) !!}
+      {!! Form::text('email', null, ['placeholder' => 'Email']) !!}
+      {!! Form::text('primary_phone', null, ['placeholder' => 'Primary Phone']) !!}
+      {!! Form::text('secondary_phone', null, ['placeholder' => 'Secondary Phone']) !!}
+    </div>
+    <div class="col-sm-6">
+      {!! Form::text('address', null, ['placeholder' => 'Address']) !!}
+      {!! Form::text('city', null, ['placeholder' => 'City']) !!}
+      {!! Form::text('zip_code', null, ['placeholder' => 'Zip Code']) !!}
+      {!! Form::text('emergency_name', null, ['placeholder' => 'Emergency Contact Name']) !!}
+      {!! Form::text('emergency_phone', null, ['placeholder' => 'Emergency Contact Phone #']) !!}
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Note: If you are applying to volunteer because you are a participant in a community jobs program (i.e. Job Council, Experience Works, Etc.), please provide the following information:</p>
+
+      {!! Form::text('program', null, ['placeholder' => 'Program Name']) !!}
+      {!! Form::text('program_name', null, ['placeholder' => 'Program Contact Name']) !!}
+      {!! Form::text('program_phone', null, ['placeholder' => 'Program Contact Phone #']) !!}
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 class="text-center">AVAILABILITY FOR SERVICE</h4>
+      {!! Form::label('start_date', 'I am available to work beginning:') !!}
+      {!! Form::input('date', 'start_date', null, ['class' => 'form-control']) !!}
+    </div>
+  </div>
+  
+  <br />
+
+  <div class="row">
+    <div class="col-sm-6">
+      <p>
+        Please indicate your preferences for days and hours to volunteer:
+      </p>
+      <div class="form-group">
+        {!! Form::checkbox('weekday_group[]', 'Sunday') !!}
+        {!! Form::label('weekday_group[]', 'Sunday') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('weekday_group[]', 'Monday') !!}
+        {!! Form::label('weekday_group[]', 'Monday') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('weekday_group[]', 'Tuesday') !!}
+        {!! Form::label('weekday_group[]', 'Tuesday') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('weekday_group[]', 'Wednesday') !!}
+        {!! Form::label('weekday_group[]', 'Wednesday') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('weekday_group[]', 'Thursday') !!}
+        {!! Form::label('weekday_group[]', 'Thursday') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('weekday_group[]', 'Friday') !!}
+        {!! Form::label('weekday_group[]', 'Friday') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('weekday_group[]', 'Saturday') !!}
+        {!! Form::label('weekday_group[]', 'Saturday') !!}
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <p>Volunteering:</p>
+      <div class="form-group">
+        {!! Form::radio('time_commitment', 'Long Term') !!}
+        {!! Form::label('time_commitment', 'Long-term') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::radio('time_commitment', 'Temporary') !!}
+        {!! Form::label('time_commitment', 'Temporary(number of weeks if known)') !!}
+        {!! Form::text('commitment_weeks') !!}
+      </div>
+      <br />
+      <p>How often can you work?</p>
+      <div class="form-group">
+        {!! Form::radio('frequency', 'Weekly Plus') !!}
+        {!! Form::label('frequency', 'More frequently than weekly') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::radio('frequency', 'Weekly') !!}
+        {!! Form::label('frequency', 'Weekly') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::radio('frequency', 'Biweekly') !!}
+        {!! Form::label('frequency', 'Biweekly') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::radio('frequency', 'Monthly') !!}
+        {!! Form::label('frequency', 'Monthly') !!}
+      </div>
+    </div>
+  </div>
+  
   <br>
-  <h4>AVAILABILITY FOR SERVICE</h4>
-  <p>I am available to work beginning:</p>
-    {!! Form::input('date', 'start_date', null, ['class' => 'form-control']) !!}
-  <p><br>Please indicate your preferences for days and hours to volunteer:</p>
-  <p>
-    {!! Form::checkbox('weekday_group[]', 'Sunday') !!}&nbsp;Sunday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'Monday') !!}&nbsp;Monday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'Tuesday') !!}&nbsp;Tuesday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'Wednesday') !!}&nbsp;Wednesday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'Thursday') !!}&nbsp;Thursday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'Friday') !!}&nbsp;Friday&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('weekday_group[]', 'Saturday') !!}&nbsp;Saturday&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p><br>Volunteering:</p>
-  <p>
-    {!! Form::radio('time_commitment', 'Long Term') !!}&nbsp;Long-term&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::radio('time_commitment', 'Temporary') !!}&nbsp;Temporary(state number of weeks if known)&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::text('commitment_weeks') !!}
-  </p>
-  <p><br>How often can you work?</p>
-  <p>
-    {!! Form::radio('frequency', 'Weekly Plus') !!}&nbsp;More frequently than weekly&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::radio('frequency', 'Weekly') !!}&nbsp;Weekly&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::radio('frequency', 'Biweekly') !!}&nbsp;Biweekly&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::radio('frequency', 'Monthly') !!}&nbsp;Monthly&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>PHYSICAL & SENSORY DEMANDS</h4>
+      <p>
+        The volunteer will need to be able to stand/walk in the process of packing and unpacking boxes of books and stocking shelves. He/she may need to sit at a computer for periods of time. He/she may need to lift books and other media, boxes of books, supplies and/or other materials from time to time. The store may be noisy and busy, making it difficult to concentrate from time to time.
+      </p>
+    </div>
+  </div>
   <br>
-  <h4>PHYSICAL & SENSORY DEMANDS</h4>
-  <p>The volunteer will need to be able to stand/walk in the process of packing and unpacking boxes of books 
-      and stocking shelves. He/she may need to sit at a computer for periods of time. He/she may need to lift 
-      books and other media, boxes of books, supplies and/or other materials from time to time. The store may 
-      be noisy and busy, making it difficult to concentrate from time to time.</p>
+  
+  <div class="row">
+    <div class="col-sm-12"><span class="text-center">
+      <h4>VOLUNTEER ASSIGNMENT PREFERENCES</h4>
+      <p>(Note: all assignments will be made according to ability as determined by management)</p>
+    </span></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Book Processing:</h4>
+      {!! Form::checkbox('book_processing_group[]', 'Straigten Shelves') !!}
+      {!! Form::label('book_processing_group[]', 'Straighten shelves') !!}
+      <br />
+      {!! Form::checkbox('book_processing_group[]', 'Sort Books') !!}
+      {!! Form::label('book_processing_group[]', 'Sort books') !!}
+      <br />
+      {!! Form::checkbox('book_processing_group[]', 'Shelve Books') !!}
+      {!! Form::label('book_processing_group[]', 'Shelve books') !!}
+    </div>
+    <div class="col-sm-4">
+      <h4>Research & Analysis:</h4>
+      {!! Form::checkbox('research_analysis_group[]', 'Scanning') !!}
+      {!! Form::label('research_analysis_group[]', 'Scanning') !!}
+      <br />
+      {!! Form::checkbox('research_analysis_group[]', 'Listing online') !!}
+      {!! Form::label('research_analysis_group[]', 'Listing online') !!}
+    </div>
+    <div class="col-sm-4">
+      <h4>Front Desk Reception:</h4>
+      {!! Form::checkbox('front_desk_group[]', 'Customer service') !!}
+      {!! Form::label('front_desk_group[]', 'Customer service') !!}
+      <br />
+      {!! Form::checkbox('front_desk_group[]', 'Answer phone') !!}
+      {!! Form::label('front_desk_group[]', 'Answer phone') !!}
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Light Janitorial:</h4>
+      {!! Form::checkbox('janitorial_group[]', 'Dust vacuum') !!}
+      {!! Form::label('janitorial_group[]', 'Dust & Vacuum') !!}
+      <br />
+      {!! Form::checkbox('janitorial_group[]', 'Clean bathroom') !!}
+      {!! Form::label('janitorial_group[]', 'Clean bathroom') !!}
+      <br />
+      {!! Form::checkbox('janitorial_group[]', 'Recycling') !!}
+      {!! Form::label('janitorial_group[]', 'Recycling') !!}
+    </div>
+    <div class="col-sm-4">
+      <h4>Special Projects:</h4>
+      {!! Form::checkbox('special_projects_group[]', 'Fund raising') !!}
+      {!! Form::label('special_projects_group[]', 'Fund raising') !!}
+      <br />
+      {!! Form::checkbox('special_projects_group[]', 'Offsite booth') !!}
+      {!! Form::label('special_projects_group[]', 'Offsite booth') !!}
+      <br />
+      {!! Form::checkbox('special_projects_group[]', 'Committees') !!}
+      {!! Form::label('special_projects_group[]', 'Committees') !!}
+    </div>
+    <div class="col-sm-4">
+      <h4>Book Pickups:</h4>
+      {!! Form::checkbox('book_pickups_group[]', 'Medford') !!}
+      {!! Form::label('book_pickups_group[]', 'Medford') !!}
+      <br />
+      {!! Form::checkbox('book_pickups_group[]', 'Central Point') !!}
+      {!! Form::label('book_pickups_group[]', 'Central Point') !!}
+      <br />
+      {!! Form::checkbox('book_pickups_group[]', 'Eagle Point') !!}
+      {!! Form::label('book_pickups_group[]', 'Eagle Point') !!}
+      <br />
+      {!! Form::checkbox('book_pickups_group[]', 'Shady Cove') !!}
+      {!! Form::label('book_pickups_group[]', 'Shady Cove') !!}
+      <br />
+      {!! Form::checkbox('book_pickups_group[]', 'Ashland') !!}
+      {!! Form::label('book_pickups_group[]', 'Ashland') !!}
+      <br />
+      {!! Form::checkbox('book_pickups_group[]', 'Talent/Phoenix') !!}
+      {!! Form::label('book_pickups_group[]', 'Talent/Phoenix') !!}
+      <br />
+      {!! Form::checkbox('book_pickups_group[]', 'Jacksonville/Applegate/Ruch') !!}
+      {!! Form::label('book_pickups_group[]', 'Jacksonville/Applegate/Ruch') !!}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p>I have an SUV, pickup truck or van that I'm willing to use:</p>
+      <div class="form-group">
+        {!! Form::radio('has_vehicle', 'Yes') !!}
+        {!! Form::label('has_vehicle', 'Yes') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::radio('has_vehicle', 'No') !!}
+        {!! Form::label('has_vehicle', 'No') !!}
+      </div>
+    </div>
+  </div>
   <br>
-  <h4>VOLUNTEER ASSIGNMENT PREFERENCES</h4>
-  <p>(Note: all assignments will be made according to ability as determined by management)</p>
-  <p><strong>Book Processing:</strong></p>
-  <p>
-    {!! Form::checkbox('book_processing_group[]', 'straigten_shelves') !!}&nbsp;Straighten Shelves&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('book_processing_group[]', 'sort_books') !!}&nbsp;Sort Books&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('book_processing_group[]', 'shelve_books') !!}&nbsp;Shelve Books&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p><br><strong>Research & Analysis:</strong></p>
-  <p>
-    {!! Form::checkbox('research_analysis_group[]', 'scanning') !!}&nbsp;Scanning&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('research_analysis_group[]', 'listing_online') !!}&nbsp;Listing Online&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p><br><strong>Front Desk Reception:</strong></p>
-  <p>
-    {!! Form::checkbox('front_desk_group[]', 'customer_service') !!}&nbsp;Customer Service&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('front_desk_group[]', 'answer_phone') !!}&nbsp;Answer Phone&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p><br><strong>Light Janitorial:</strong></p>
-  <p>
-    {!! Form::checkbox('janitorial_group[]', 'dust_vacuum') !!}&nbsp;Dust & Vacuum&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('janitorial_group[]', 'clean_bathroom') !!}&nbsp;Clean Bathroom&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('janitorial_group[]', 'recycling') !!}&nbsp;Recycling&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p><br><strong>Special Projects:</strong></p>
-  <p>
-    {!! Form::checkbox('special_projects_group[]', 'fund_raising') !!}&nbsp;Fund raising events&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('special_projects_group[]', 'offsite_booth') !!}&nbsp;Offsite Booth&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('special_projects_group[]', 'committees') !!}&nbsp;Committees&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p><br><strong>Book Pickups:</strong></p>
-  <p>
-    {!! Form::checkbox('book_pickups_group[]', 'medford') !!}&nbsp;Medford&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('book_pickups_group[]', 'central_point') !!}&nbsp;Central Point&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('book_pickups_group[]', 'eagle_point') !!}&nbsp;Eagle Point&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('book_pickups_group[]', 'shady_cove') !!}&nbsp;Shady Cove&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('book_pickups_group[]', 'ashland') !!}&nbsp;Ashland&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('book_pickups_group[]', 'talent_phoenix') !!}&nbsp;Talent/Phoenix&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('book_pickups_group[]', 'jacksonville_applegate_ruch') !!}&nbsp;Jacksonville/Applegate/Ruch&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p>I have an SUV, pickup truck or van that I'm willing to use:</p>
-  <p>
-    {!! Form::radio('has_vehicle', 'Yes') !!}&nbsp;yes&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::radio('has_vehicle', 'No') !!}&nbsp;no&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>Tell us about yourself:</h4>
+      <p>I'm interested in:</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'non_fiction') !!}
+        {!! Form::label('personal_interests_group[]', 'Non-fiction') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'general_fiction') !!}
+        {!! Form::label('personal_interests_group[]', 'General Fiction') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'mystery') !!}
+        {!! Form::label('personal_interests_group[]', 'Mystery') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'romance') !!}
+        {!! Form::label('personal_interests_group[]', 'Romance') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'westerns') !!}
+        {!! Form::label('personal_interests_group[]', 'Westerns') !!}
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'science_fiction') !!}
+        {!! Form::label('personal_interests_group[]', 'Science Fiction/Fantasy') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'religous') !!}
+        {!! Form::label('personal_interests_group[]', 'Religious/Spirituality') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'teens') !!}
+        {!! Form::label('personal_interests_group[]', 'Teens/Tweens') !!}
+      </div>
+      <div class="form-group">
+        {!! Form::checkbox('personal_interests_group[]', 'childrens') !!}
+        {!! Form::label('personal_interests_group[]', 'Children\'s') !!}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>My computer skills include:</h4>
+      {!! Form::textarea('computer_skills', null, ['size' => '150x3']) !!}
+      <h4>Other relevant experience I want you to know about:</h4>
+      {!! Form::textarea('experience', null, ['size' => '150x3']) !!}
+    </div>
+  </div>
   <br>
-  <p><br><strong>Tell us about yourself:</strong></p>
-  <p>I'm interested in:</p>
-  <p>
-    {!! Form::checkbox('personal_interests_group[]', 'non_fiction') !!}&nbsp;Non-fiction&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('personal_interests_group[]', 'general_fiction') !!}&nbsp;General Fiction&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('personal_interests_group[]', 'mystery') !!}&nbsp;Mystery&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('personal_interests_group[]', 'romance') !!}&nbsp;Romance&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('personal_interests_group[]', 'westerns') !!}&nbsp;Westerns&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('personal_interests_group[]', 'science_fiction') !!}&nbsp;Science Fiction/Fantasy&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p>
-    {!! Form::checkbox('personal_interests_group[]', 'religous') !!}&nbsp;Religious/Spirituality&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('personal_interests_group[]', 'teens') !!}&nbsp;Teens/Tweens&nbsp;&nbsp;&nbsp;&nbsp;
-    {!! Form::checkbox('personal_interests_group[]', 'childrens') !!}&nbsp;Children's&nbsp;&nbsp;&nbsp;&nbsp;
-  </p>
-  <p><br>My computer skills include:</p>
-    {!! Form::textarea('computer_skills', null, ['size' => '150x3']) !!}
-  <p><br>Other relevant experience I want you to know about:</p>
-    {!! Form::textarea('experience', null, ['size' => '150x3']) !!}
-  <br>
-  <h4>RBE EXPECTATIONS OF VOLUNTEERS</h4>
-  <p>As a volunteer, I agree:</p>
-  <ol>
-    <li>I will notify the Store Manager as soon as possible if I am not able to report for my assigned shift. 
-        If I cannot reach the Manager by phone, I will leave a message on the answering machine.</li>
-    <li>I will always represent the best interest of the Rogue Book Exchange, always using care and consideration.</li>
-  </ol>
-  <p>Please be aware that our need for additional Bookstore volunteers fluctuates and we attempt to match applicants 
-    with openings based on their hours of availability, areas of interest and physical capablilities. Thank you for 
-    your interest.</p>
-  {!! Form::submit('Submit Form', ['class' => 'btn btn-default form-control']) !!}
-  {!! Form::close() !!}
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>RBE EXPECTATIONS OF VOLUNTEERS</h4>
+      <p>As a volunteer, I agree:</p>
+      <ol>
+        <li>I will notify the Store Manager as soon as possible if I am not able to report for my assigned shift. 
+            If I cannot reach the Manager by phone, I will leave a message on the answering machine.</li>
+        <li>I will always represent the best interest of the Rogue Book Exchange, always using care and consideration.</li>
+      </ol>
+      <p>
+        Please be aware that our need for additional Bookstore volunteers fluctuates and we attempt to match applicants with openings based on their hours of availability, areas of interest and physical capablilities. Thank you for your interest.
+      </p>
+      {!! Form::submit('Submit Form', ['class' => 'btn btn-default form-control']) !!}
+      {!! Form::close() !!}
+    </div>
+  </div>
 @stop

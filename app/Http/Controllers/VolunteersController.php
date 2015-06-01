@@ -5,6 +5,8 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use Mail;
+use App\User;
 use App\Volunteer;
 use App\Http\Requests\VolunteerFormRequest;
 
@@ -47,7 +49,13 @@ class VolunteersController extends Controller {
       }
     }
     Volunteer::create($data);
-//     return '<pre>' . var_export($vol, true) . '</pre>';
+    Mail::send('emails.volunteerform', $data,
+    	function($message)
+		    {
+	        $message->from('websitewizardguy@gmail.com');
+	        $message->to('trumpetted88@gmail.com', 'Admin')->subject('RBE Volunteer Form');
+		    });
+
     return redirect('/volunteer')->with('message', 'Thank you for your interest in volunteering!');
 	}
 
@@ -60,43 +68,8 @@ class VolunteersController extends Controller {
 	public function show($id)
 	{
 		$v = Volunteer::find($id);
-		// $volunteer->each(function($vol)
-		// {
-		// 		if (is_serialized($vol)) {
-		// 			$volunteer[$i] = unserialize($vol);
-		// 		}
-		// })
-		// foreach ($volunteer as $i => $vol) {
-		// 	if (is_serialized($vol)) {
-		// 		$volunteer[$i] = unserialize($vol);
-		// 	}
-		// }
-		// return '<pre>' . var_export($volunteer, true) . '</pre>';
-		// return var_dump($volunteer);
 		$page = get_page_contents();
 		return view('volunteers.show', compact('v', 'page'));
-	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
 	}
 
 	/**
@@ -107,7 +80,8 @@ class VolunteersController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		Volunteer::destroy($id);
+		return redirect('volunteers');
 	}
 
 }
