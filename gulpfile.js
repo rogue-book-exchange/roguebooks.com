@@ -1,4 +1,7 @@
 var elixir = require('laravel-elixir');
+var concat = require('gulp-concat');
+var gulp = require('gulp');
+var pipe = require('pipe');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,10 +16,16 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.less('app.less');
-
+    
     mix.styles([
       'calendar.css'
-      ], 'public/css/app.css');
+      ], 'public/css/calendar.css');
 
     mix.version('public/css/app.css');
+});
+
+gulp.task('styles', function() {
+  return gulp.src(['public/css/*.css'])
+    .pipe(concat('app.css'))
+    .pipe(gulp.dest('public/css'));
 });
