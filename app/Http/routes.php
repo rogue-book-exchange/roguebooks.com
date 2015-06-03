@@ -20,15 +20,31 @@ Route::get('calendar', 'PagesController@calendar');
 Route::get('tour', 'PagesController@tour');
 Route::get('volunteer', 'PagesController@volunteer');
 
-Route::get('admin', 'PagesController@admin');
 
 $router->group(['middleware' => 'auth'], function() {
+  
+  Route::get('admin', 'PagesController@admin');
+  
   Route::resource('volunteers', 'VolunteersController',
     ['only'=>['index', 'show', 'destroy']]);
+  
   Route::resource('faqs', 'FaqController',
     ['except'=>['index', 'show']]);
+  
   Route::resource('wishlists', 'WishListController',
     ['except'=>['index']]);
+
+  Route::post('change-password',
+    [
+      'as'      => 'admin.change.password',
+      'uses'    => 'FormController@change_password'
+    ]);
+
+  Route::post('update_user_info',
+    [
+      'as'      => 'update.user.info',
+      'uses'    => 'FormController@update_user_info'
+    ]);
 });
 
 

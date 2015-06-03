@@ -6237,6 +6237,18 @@ label,
 .double-space {
   line-height: 2em;
 }
+.nav-image-links {
+  margin: 0px;
+  padding: 0px;
+}
+.social-icons {
+  position: absolute;
+  padding: 5px;
+  border-radius: 10px;
+  right: 10px;
+  box-shadow: 0px 0px 40px white;
+  background: rgba(255, 255, 255, 0.8);
+}
 /*=======================================================
 =            Style for the full width footer            =
 =======================================================*/
@@ -6347,42 +6359,3 @@ a {
 /*-----  End of Gradient styles for the nav and buttons  ------*/
 
 /*# sourceMappingURL=app.css.map */
-/* Responsive iFrame */
-.responsive-iframe-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
-}
-
-.responsive-iframe-container iframe,
-.vresponsive-iframe-container object,
-.vresponsive-iframe-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
-/*#ccccff*/
-
-/*Phone vs Full*/
-@media screen and (max-width: 600px){
-    #full{
-        display: none;
-    }
-    #phone{
-        display: block;
-    }
-}
-@media screen and (min-width: 601px){
-    #full{
-        display: block;
-    }
-    #phone{
-        display: none;
-    }
-})
-/*# sourceMappingURL=calendar.css.map */

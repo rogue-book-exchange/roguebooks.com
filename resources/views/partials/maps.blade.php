@@ -2,10 +2,10 @@
   <div class="panel-heading-border">
     <div class="panel-heading green-white-gradient">
       <div class="panel-title text-center">
-        @if (array_key_exists('google-maps', $page))
-          @if (Auth::check())
-            {!! Form::text('google-maps', $page['google-maps'], ['rows'=>'1','form'=>'page-update']) !!}
-          @else
+        @if (Auth::check())
+          {!! Form::text('google-maps', $page['google-maps'], ['rows'=>'1','form'=>'page-update']) !!}
+        @else
+          @if (array_key_exists('google-maps', $page))
             <h2>{{ $page['google-maps'] }}</h2>
           @endif
         @endif

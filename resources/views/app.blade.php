@@ -23,6 +23,24 @@
 </head>
 <body>
 
+<div class="social-icons">
+	<a href="#">
+		<img src="{{ asset('images/social-icons/facebook-image.png') }}" alt="facebook-image">
+	</a>
+
+	<a href="#">
+		<img src="{{ asset('images/social-icons/google-plus-image.png') }}" alt="google-plus-image">
+	</a>
+
+	<a href="#">
+		<img src="{{ asset('images/social-icons/amazon-smile-image.png') }}" alt="amazon-smile-image">
+	</a>
+
+	<a href="#">
+		<img src="{{ asset('images/social-icons/fred-meyer-rewards-image.png') }}" alt="fred-meyer-rewards-image">
+	</a>
+</div>
+
 	{!! Form::open(['url'=>'/update-content', 'id'=>'page-update']) !!}
 	{!! Form::close() !!}
 

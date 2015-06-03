@@ -7,6 +7,8 @@ use App\Page;
 use App\Block;
 use App\Faq;
 use App\User;
+
+use Auth;
 use App\Wishlist;
 use App\Http\Requests\PageUpdateRequest;
 
@@ -62,7 +64,7 @@ class PagesController extends Controller {
 	public function admin()
 	{
 		$page = get_page_contents();
-		$user = User::all();
+		$user = Auth::user();
 		return view('pages.admin', compact('user', 'page'));
 	}
 

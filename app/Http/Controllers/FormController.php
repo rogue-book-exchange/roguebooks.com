@@ -8,19 +8,12 @@ use App\User;
 use Mail;
 use App\Block;
 use App\Volunteer;
-use Request;
+use Auth;
+use Illuminate\Http\Request;
+use App\Http\Requests\PasswordChangeRequest;
+use App\Http\Requests\UserInfoChangeRequest;
 
 class FormController extends Controller {
-
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		//
-	}
 	
 
 	/**
@@ -49,48 +42,36 @@ class FormController extends Controller {
 
 	}
 
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($url)
+	public function change_password(PasswordChangeRequest $request)
 	{
-		//
+		$password = $request->all();
+		if ($password['password'] === $password['password_confirmation']) {
+			User::find(Auth::user()->id)->update(['password'=>bcrypt($password['password'])]);
+			
+			return redirect('/admin')->with([
+					'password_update' => 'Your password has been updated', 
+					'class'=>'success'
+				]);
+		} else {
+			return redirect('/admin')->with([
+					'password_update' => 'Your passwords don\'t match',
+					'class' => 'danger'
+				]);
+		}
 	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
+	public function update_user_info(UserInfoChangeRequest $request)
 	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
+		$user = $request->all();
+		User::find(Auth::user()->id)->update([
+				'first_name'=>$user['first_name'],
+				'last_name'=>$user['last_name'],
+				'email'=>$user['email']
+			]);
+		return redirect('/admin')->with([
+				'user_update' => 'Info updated successfully',
+				'class' => 'success'
+			]);
 	}
 
 }

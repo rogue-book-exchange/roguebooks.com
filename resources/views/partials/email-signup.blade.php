@@ -2,10 +2,10 @@
   <div class="panel-heading-border">
     <div class="panel-heading green-white-gradient">
       <div class="panel-title text-center">
-        @if (array_key_exists('global-subscribe-header', $page))
-          @if (Auth::check())
-            {!! Form::text('global-subscribe-header', $page['global-subscribe-header'], ['rows'=>'1', 'form'=>'page-update']) !!}
-          @else
+        @if (Auth::check())
+          {!! Form::text('global-subscribe-header', $page['global-subscribe-header'], ['rows'=>'1', 'form'=>'page-update']) !!}
+        @else
+          @if (array_key_exists('global-subscribe-header', $page))
             <h2>{{ $page['global-subscribe-header'] }}</h2>
           @endif
         @endif
