@@ -18,16 +18,17 @@ elixir(function(mix) {
     mix.less('app.less');
     
     mix.styles([
-      'calendar.css'
-      ], 'public/css/calendar.css');
+      'calendar.css',
+      'custom.css',
+      'spacegallery.css'
+      ], 'public/css/assets.css');
 
+    mix.task('styles', function() {
+      return gulp.src(['public/css/*.css'])
+        .pipe(concat('app.css'))
+        .pipe(gulp.dest('public/css'));
+    });
+    
     mix.version('public/css/app.css');
-
-    mix.scripts()
 });
 
-gulp.task('styles', function() {
-  return gulp.src(['public/css/*.css'])
-    .pipe(concat('app.css'))
-    .pipe(gulp.dest('public/css'));
-});
