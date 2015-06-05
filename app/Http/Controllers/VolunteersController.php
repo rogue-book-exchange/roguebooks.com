@@ -53,7 +53,7 @@ class VolunteersController extends Controller {
     	function($message)
 		    {
 	        $message->from('websitewizardguy@gmail.com');
-	        $message->to('trumpetted88@gmail.com', 'Admin')->subject('RBE Volunteer Form');
+	        $message->to('tinaamador@gmail.com', 'Admin')->subject('RBE Volunteer Form');
 		    });
 
     return redirect('/volunteer')->with('message', 'Thank you for your interest in volunteering!');

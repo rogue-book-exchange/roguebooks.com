@@ -27,6 +27,17 @@
 @endif
   
   <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      @if (Auth::check())
+        {!! Form::textarea('volunteer-header', $page['volunteer-header'], ['rows'=>'7', 'form'=>'page-update']) !!}
+      @else
+        @if (array_key_exists('volunteer-header', $page))
+          <p class="double-space">{{ $page['volunteer-header'] }}</p>
+        @endif
+      @endif
+    </div>
+  </div>
+  <div class="row">
     <span class="text-center">
       <h3>VOLUNTEER APPLICATION</h3>
       <h4>CONTACT INFORMATION</h4>
@@ -318,4 +329,8 @@
       {!! Form::close() !!}
     </div>
   </div>
+@stop
+
+@section('footer')
+  @include('partials/footer')
 @stop

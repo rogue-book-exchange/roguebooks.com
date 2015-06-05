@@ -22,6 +22,8 @@ elixir(function(mix) {
       ], 'public/css/calendar.css');
 
     mix.version('public/css/app.css');
+
+    mix.scripts()
 });
 
 gulp.task('styles', function() {

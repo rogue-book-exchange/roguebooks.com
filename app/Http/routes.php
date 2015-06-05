@@ -45,6 +45,8 @@ $router->group(['middleware' => 'auth'], function() {
       'as'      => 'update.user.info',
       'uses'    => 'FormController@update_user_info'
     ]);
+  
+  Route::post('/update-content', 'PagesController@update_content');
 });
 
 
@@ -53,7 +55,6 @@ Route::get('/login', 'PagesController@login');
 // Route::get('faq', 'PagesController@faq');
 
 
-Route::post('/update-content', 'PagesController@update_content');
 
 // Route::get('contact', 
 //   ['as' => 'contact', 'uses' => 'FormController@create']);
