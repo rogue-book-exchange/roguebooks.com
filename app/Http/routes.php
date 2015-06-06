@@ -34,6 +34,9 @@ $router->group(['middleware' => 'auth'], function() {
   Route::resource('wishlists', 'WishListController',
     ['except'=>['index']]);
 
+  Route::resource('supports', 'SupportController',
+    ['except'=>['index']]);
+
   Route::post('change-password',
     [
       'as'      => 'admin.change.password',

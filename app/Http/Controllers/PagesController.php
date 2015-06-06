@@ -8,6 +8,7 @@ use App\Page;
 use App\Block;
 use App\Faq;
 use App\User;
+use App\Support;
 
 use Auth;
 use App\Wishlist;
@@ -54,8 +55,9 @@ class PagesController extends Controller {
 	{
 		$page = get_page_contents('support');
 		$wishlistitems = Wishlist::all();
+		$supportitems = Support::all();
 		//return dump($page);
-		return view('pages.support', compact('page', 'wishlistitems'));
+		return view('pages.support', compact('page', 'wishlistitems', 'supportitems'));
 	}
 
 	public function contact()

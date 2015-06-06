@@ -3,7 +3,7 @@
 use App\Http\Requests\Request;
 use Auth;
 
-class FaqRequest extends Request {
+class SupportBlockRequest extends Request {
 
 	/**
 	 * Determine if the user is authorized to make this request.
@@ -27,7 +27,8 @@ class FaqRequest extends Request {
 	public function rules()
 	{
 		return [
-			//
+			'header' => 'required',
+			'body' => 'required'
 		];
 	}
 

@@ -13,17 +13,30 @@
 	    @include('partials.email-signup')
 	  </div>
 	</div>
-	<div class="row">
-	  <div class="col-sm-10 col-sm-offset-1">
-	    @if (Auth::check())
-	      {!! Form::textarea('support-header', $page['support-header'], ['rows'=>'7', 'form'=>'page-update']) !!}
-	    @else
-	      @if (array_key_exists('support-header', $page))
-	        <p class="double-space">{{ $page['support-header'] }}</p>
-	      @endif
-	    @endif
-	  </div>
-	</div>
+	@if (Auth::check())
+		<a href="{{ route('supports.create') }}" class="btn btn-default">Add Support Block</a>
+	@endif
+	@if (count($supportitems))
+		@foreach ($supportitems as $support)
+			<div class="row">
+				<div class="col-sm-12">
+					{!! Form::open(['route' => ['supports.destroy', $support->id], 'method' => 'delete', 'id'=>'destroy']) !!}
+					{!! Form::close() !!}
+					<h3>
+					{{ $support->header }}
+					@if (Auth::check())
+					  &nbsp;&nbsp;
+					  |&nbsp;&nbsp;&nbsp;<a href="{{ route('supports.edit', $support->id) }}" class="btn btn-default">Edit</a>
+					  &nbsp;&nbsp;
+					  |&nbsp;&nbsp;&nbsp;{!! Form::submit('Delete', ['form'=>'destroy']) !!}
+					@endif
+					</h3>
+					<p>{{ $support->body }}</p>
+				</div>
+			</div>
+		@endforeach
+	@endif
+	<br />
 	<div class="row">
 		<div class="col-sm-12">
 			@include('partials.wishlist')

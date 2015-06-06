@@ -9,9 +9,9 @@
     <h1>Add Support Block</h1>
     <hr />
     <div class="col-sm-12 text-center">
-    {!! Form::open(['url'=>'faqs']) !!}
+    {!! Form::open(['url'=>'supports']) !!}
 
-    @include('faqs._form', ['submitButtonText' => 'Add FAQ'])
+    @include('supports._form', ['submitButtonText' => 'Add Support Block'])
 
     {!! Form::close() !!}
     </div>
