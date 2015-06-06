@@ -53,7 +53,9 @@ class PagesController extends Controller {
 	public function support()
 	{
 		$page = get_page_contents('support');
-		return view('pages.support', compact('page'));
+		$wishlistitems = Wishlist::all();
+		//return dump($page);
+		return view('pages.support', compact('page', 'wishlistitems'));
 	}
 
 	public function contact()
