@@ -24,19 +24,19 @@
 <body>
 
 <div class="social-icons">
-	<a href="#">
+	<a href="https://www.facebook.com/RogueBookExchange?fref=ts" target="_blank">
 		<img src="{{ asset('images/social-icons/facebook-image.png') }}" alt="facebook-image">
 	</a>
 
-	<a href="#">
+	<a href="https://plus.google.com/u/0/100796651327650874372/posts" target="_blank">
 		<img src="{{ asset('images/social-icons/google-plus-image.png') }}" alt="google-plus-image">
 	</a>
 
-	<a href="#">
+	<a href="http://smile.amazon.com" target="_blank">
 		<img src="{{ asset('images/social-icons/amazon-smile-image.png') }}" alt="amazon-smile-image">
 	</a>
 
-	<a href="#">
+	<a href="https://www.fredmeyer.com/topic/community-rewards-4" target="_blank">
 		<img src="{{ asset('images/social-icons/fred-meyer-rewards-image.png') }}" alt="fred-meyer-rewards-image">
 	</a>
 </div>

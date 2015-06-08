@@ -27,12 +27,12 @@
 @endif
   
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
+    <div class="col-sm-12">
       @if (Auth::check())
         {!! Form::textarea('volunteer-header', $page['volunteer-header'], ['rows'=>'7', 'form'=>'page-update']) !!}
       @else
         @if (array_key_exists('volunteer-header', $page))
-          <p class="double-space">{{ $page['volunteer-header'] }}</p>
+          <p>{{ $page['volunteer-header'] }}</p>
         @endif
       @endif
     </div>
