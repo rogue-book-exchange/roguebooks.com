@@ -13,10 +13,14 @@
 @section("content")
 	<div id="row">
 		<div class="col-sm-12 hidden-xs">
-				<iframe src="https://www.google.com/calendar/embed?title=Test%20Calendar&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23bfd8c9&amp;src=veedoubleyuh%40gmail.com&amp;color=%235229A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="100%" height="700px" frameborder="0" scrolling="no"></iframe>
+      <div id="full" class="responsive-iframe-container visible-desktop visible-tablet hidden-phone">
+				<iframe id="full" src="https://www.google.com/calendar/embed?showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffcc99&amp;src=roguebookexchange%40gmail.com&amp;color=%23AB8B00&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FLos_Angeles" style=" border:solid 1px #777 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
 		</div>
 		<div class="col-sm-12 visible-xs">
-			<iframe src="https://www.google.com/calendar/embed?title=Test%20Calendar&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=480&amp;wkst=1&amp;bgcolor=%23bfd8c9&amp;src=veedoubleyuh%40gmail.com&amp;color=%235229A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23333333&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="100%" height="480" frameborder= scrolling="no"></iframe>
+      <div id="phone" class="responsive-iframe-container visible-phone hidden-desktop hidden-tablet">
+        <iframe src="https://www.google.com/calendar/embed?showCalendars=0&amp;mode=AGENDA&amp;height=480&amp;wkst=1&amp;bgcolor=%23ffcc99&amp;src=roguebookexchange%40gmail.com&amp;color=%23AB8B00&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FLos_Angeles" style=" border:solid 1px #777 " width="600" height="480" frameborder="0" scrolling="no"></iframe>
+      </div>
 		</div>
 	</div>
 @stop
