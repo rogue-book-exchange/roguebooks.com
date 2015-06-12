@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="panel-body text-center">
-    {!! Form::open() !!}
+    {!! Form::open(['url'=>'emails']) !!}
 
       <div class="row">
         <div class="col-sm-7">
@@ -27,5 +27,16 @@
       </div>
 
     {!! Form::close() !!}
+    
+    @if(Session::has('emailSubscribe'))
+		 <div class="row">
+		 	<div class="col-sm-12">
+		 		<div class="alert alert-success text-center">
+		 		  {{Session::get('emailSubscribe')}}
+		 		</div>
+		 	</div>
+		 </div>
+		@endif
+    
   </div>
 </div>

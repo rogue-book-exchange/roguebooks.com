@@ -36,6 +36,9 @@ $router->group(['middleware' => 'auth'], function() {
 
   Route::resource('supports', 'SupportController',
     ['except'=>['index']]);
+  
+  Route::resource('emails', 'EmailsController',
+    ['except'=>['new', 'create', 'destroy']]);
 
   Route::post('change-password',
     [
@@ -52,6 +55,19 @@ $router->group(['middleware' => 'auth'], function() {
   Route::post('/update-content', 'PagesController@update_content');
 });
 
+Route::post('emails', 
+           [
+             'as' => 'emails.store',
+             'uses' => 'EmailsController@store'
+           ]);
+
+Route::delete('emails', 
+           [
+             'as' => 'emails.destroy',
+             'uses' => 'EmailsController@destroy'
+           ]);
+
+Route::get('emails', 'EmailsController@index');
 
 Route::get('/login', 'PagesController@login');
 

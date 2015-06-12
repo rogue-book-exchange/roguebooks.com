@@ -7,9 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'CreateBlocksTable' => $baseDir . '/database/migrations/2015_05_06_202526_create_blocks_table.php',
+    'CreateEmailsTable' => $baseDir . '/database/migrations/2015_06_08_214648_create_emails_table.php',
     'CreateFaqsTable' => $baseDir . '/database/migrations/2015_05_18_204204_create_faqs_table.php',
     'CreatePagesTable' => $baseDir . '/database/migrations/2015_04_19_021704_create_pages_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreateSupportsTable' => $baseDir . '/database/migrations/2015_06_06_022607_create_supports_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'CreateVolunteersTable' => $baseDir . '/database/migrations/2015_05_11_214415_create_volunteers_table.php',
     'CreateWishlistsTable' => $baseDir . '/database/migrations/2015_06_01_211951_create_wishlists_table.php',
