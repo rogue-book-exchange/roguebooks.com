@@ -24,6 +24,10 @@
 <body>
 
 <div class="social-icons">
+  	<a href="https://www.linkedin.com/company/6446680?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1434125955259%2Ctas%3Arogue%20book%20exchange" target="_blank">
+		<img src="{{ asset('images/social-icons/linkeden.png') }}" alt="linkeden-image">
+	</a>
+  
 	<a href="https://www.facebook.com/RogueBookExchange?fref=ts" target="_blank">
 		<img src="{{ asset('images/social-icons/facebook-image.png') }}" alt="facebook-image">
 	</a>
