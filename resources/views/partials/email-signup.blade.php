@@ -19,8 +19,23 @@
         <div class="col-sm-7">
           {!! Form::text('email', null, ['placeholder'=>'email@example.com']) !!}
         </div>
-
-
+        
+        @if($errors->all())
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="panel panel-danger">
+                <div class="panel-body">
+                  <ul>
+                  @foreach($errors->all() as $error)
+                  <li>{{ $error }}</li>
+                  @endforeach
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        @endif
+        
         <div class="col-sm-4 col-sm-offset-1">
           {!! Form::submit('Subscribe', ['class'=>'btn btn-success btn-sm yellow-white-gradient pull-right']) !!}
         </div>
