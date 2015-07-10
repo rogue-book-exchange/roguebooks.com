@@ -4,8 +4,10 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\EmailRequest;
 use Request;
+use Mail;
 use Illuminate\Support\Facades\Redirect;
 use App\Email;
+use App\AdminEmail;
 
 class EmailsController extends Controller {
 
@@ -26,7 +28,29 @@ class EmailsController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view('emails.create');
+	}
+
+	public function update(EmailRequest $request, $id)
+	{
+		$email = $request->all();
+		AdminEmail::findOrFail($id)->update(['email' => $email['email']]);
+		return redirect('/admin');
+	}
+
+	public function send_email()
+	{
+		$emails = Email::all();
+		Mail::send('emailtemplates.newsletter',
+        array(
+            'user_message' => Request::get('message')
+        ), function($message) use ($emails)
+		    {
+	        $message->from('roguebookexchange@gmail.com');
+	        $message->to($emails)->subject('Rogue Book Exchange News Letter');
+		    });
+
+	  return redirect('admin/email')->with('message', 'Your message has been sent!');
 	}
 
 	/**
@@ -41,28 +65,6 @@ class EmailsController extends Controller {
 	}
 
 	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
 	 * Remove the specified resource from storage.
 	 *
 	 * @param  int  $id
@@ -70,7 +72,6 @@ class EmailsController extends Controller {
 	 */
 	public function destroy()
 	{
-   // return dump(Request::get('email'));
 		Email::where('email', '=', Request::get('email'))->delete();
     return redirect('/')->with('update', 'Sorry to see you go!');
 	}

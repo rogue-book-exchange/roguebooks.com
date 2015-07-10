@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Mail;
 use App\User;
 use App\Volunteer;
+use App\AdminEmail;
 use App\Http\Requests\VolunteerFormRequest;
 
 class VolunteersController extends Controller {
@@ -49,13 +50,13 @@ class VolunteersController extends Controller {
       }
     }
     Volunteer::create($data);
-    Mail::send('emails.volunteerform', $data,
+    Mail::send('emailtemplates.volunteerform', $data,
     	function($message)
 		    {
+		    	$volunteer_email = AdminEmail::where('role', '=', 'volunteer_form');
 	        $message->from('websitewizardguy@gmail.com');
-	        $message->to('tinaamador@gmail.com', 'Admin')->subject('RBE Volunteer Form');
+	        $message->to($volunteer_email)->subject('RBE Volunteer Form');
 		    });
-
     return redirect('/volunteer')->with('message', 'Thank you for your interest in volunteering!');
 	}
 

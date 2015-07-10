@@ -11,7 +11,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">
           <div class="panel-title text-center">
-            <h3>User Info</h3>
+            <h3>Admin Info</h3>
           </div>
         </div>
         <div class="panel-body">
@@ -68,6 +68,32 @@
               </tbody>
             </table>
           {!! Form::close() !!}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title text-center">
+            <h3>Email Designations</h3>
+          </div>
+        </div>
+        <div class="panel-body">
+          <table class="table stiped-table">
+            @foreach ($emails as $email)
+              {!! Form::model($email, ['route'=>['update.admin.email', $email->id]]) !!}
+                <tr>
+                  <td>{{ humanize($email->role) }}</td>
+                  <td>
+                    {!! Form::text('email', $email->email, ['class' => 'form-control']) !!}
+                    {!! Form::hidden('role', $email->role) !!}
+                  </td>
+                  <td>{!! Form::submit('Update') !!}</td>
+                </tr>
+              {!! Form::close() !!}
+            @endforeach
+          </table>
         </div>
       </div>
     </div>

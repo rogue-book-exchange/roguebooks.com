@@ -8,6 +8,7 @@ use App\User;
 use Mail;
 use App\Block;
 use App\Volunteer;
+use App\AdminEmail;
 use Auth;
 use Illuminate\Http\Request;
 use App\Http\Requests\PasswordChangeRequest;
@@ -25,17 +26,16 @@ class FormController extends Controller {
 	{
 		// return var_dump($request->get('email'));
 		// $user = $request->all();
-		Mail::send('emails.contactform',
+		Mail::send('emailtemplates.contactform',
         array(
             'name' => $request->get('name'),
             'email' => $request->get('email'),
             'user_message' => $request->get('message')
         ), function($message)
 		    {
-		    	$user_email = User::find(1);
-		    	var_dump($user_email->email);
+		    	$user_email = AdminEmail::where('role', '=', 'contact_form')->first();
 	        $message->from('roguebookexchange@gmail.com');
-	        $message->to('tinaamador@gmail.com', 'Admin')->subject('RBE Contact Message');
+	        $message->to($user_email->email)->subject('RBE Contact Message');
 		    });
 
 	  return redirect('contact')->with('message', 'Thanks for contacting us!');

@@ -9,6 +9,7 @@ use App\Block;
 use App\Faq;
 use App\User;
 use App\Support;
+use App\AdminEmail;
 
 use Auth;
 use App\Wishlist;
@@ -70,7 +71,8 @@ class PagesController extends Controller {
 	{
 		$page = get_page_contents();
 		$user = Auth::user();
-		return view('pages.admin', compact('user', 'page'));
+		$emails = AdminEmail::all();
+		return view('pages.admin', compact('user', 'page', 'emails'));
 	}
 
 	public function update_content(PageUpdateRequest $request)
