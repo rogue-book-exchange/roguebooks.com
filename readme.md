@@ -96,3 +96,21 @@ The database that your local project will connect to is location specific (i.e. 
 After you have manually created your database, rename the file `.env.example` to just plain old `.env` and then modify it to connect to your database using whatever credentials you set up.
 ##### Adding tables
 You will not, however, need to manually create the tables for the database. All you will need to do once you are connected to your mySQL, you can just run ``php artisan migrate`` at the command line to import the entire database schema.
+
+
+### Actually installing and starting from scratch:
+
+#### On ubuntu 14.04
+
+* make sure you have php installed
+* make sure you have php mcrypt extension installed (apt-get install php-mcrypt, sudo php5enmod mcrypt, sudo service apache2 restart (maybe not necessary?))
+* install composer (curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer)
+* use it to install your dependencies (cd into checked out repo, 'composer update')
+
+* on nitrous, cd /var/www && sudo rm html && sudo ln -s /home/nitrous/roguebooks.com/public html
+
+* chmod -R a+w ~/roguebooks.com/storage
+
+* set up db 'mysql' then
+  create database rogue_be;
+* php artisan migrate
