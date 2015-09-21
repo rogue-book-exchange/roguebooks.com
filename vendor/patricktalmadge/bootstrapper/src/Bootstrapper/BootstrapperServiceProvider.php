@@ -6,6 +6,7 @@
 namespace Bootstrapper;
 
 use Bootstrapper\Bridges\Config\Laravel4Config;
+use Illuminate\Html\HtmlBuilder;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -194,10 +195,16 @@ class BootstrapperServiceProvider extends ServiceProvider
     private function registerFormBuilder()
     {
         $this->app->bind(
+            'laravel5::html',
+            function ($app) {
+                return new HtmlBuilder($app->make('url'));
+            }
+        );
+        $this->app->bind(
             'bootstrapper::form',
             function ($app) {
                 $form = new Form(
-                    $app->make('html'),
+                    $app->make('laravel5::html'),
                     $app->make('url'),
                     $app['session.store']->getToken()
                 );

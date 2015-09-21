@@ -20,37 +20,37 @@ trait AuthenticatesAndRegistersUsers {
 	 */
 	protected $registrar;
 
-	// /**
-	//  * Show the application registration form.
-	//  *
-	//  * @return \Illuminate\Http\Response
-	//  */
-	// public function getRegister()
-	// {
-	// 	return view('auth.register');
-	// }
+	/**
+	 * Show the application registration form.
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function getRegister()
+	{
+		return view('auth.register');
+	}
 
-	// /**
-	//  * Handle a registration request for the application.
-	//  *
-	//  * @param  \Illuminate\Http\Request  $request
-	//  * @return \Illuminate\Http\Response
-	//  */
-	// public function postRegister(Request $request)
-	// {
-	// 	$validator = $this->registrar->validator($request->all());
+	/**
+	 * Handle a registration request for the application.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function postRegister(Request $request)
+	{
+		$validator = $this->registrar->validator($request->all());
 
-	// 	if ($validator->fails())
-	// 	{
-	// 		$this->throwValidationException(
-	// 			$request, $validator
-	// 		);
-	// 	}
+		if ($validator->fails())
+		{
+			$this->throwValidationException(
+				$request, $validator
+			);
+		}
 
-	// 	$this->auth->login($this->registrar->create($request->all()));
+		$this->auth->login($this->registrar->create($request->all()));
 
-	// 	return redirect($this->redirectPath());
-	// }
+		return redirect($this->redirectPath());
+	}
 
 	/**
 	 * Show the application login form.
@@ -81,7 +81,7 @@ trait AuthenticatesAndRegistersUsers {
 			return redirect()->intended($this->redirectPath());
 		}
 
-		return redirect('/login')
+		return redirect($this->loginPath())
 					->withInput($request->only('email', 'remember'))
 					->withErrors([
 						'email' => $this->getFailedLoginMessage(),

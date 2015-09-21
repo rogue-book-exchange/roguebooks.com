@@ -19,6 +19,7 @@ return array(
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'GrahamCampbell\\Markdown\\' => array($vendorDir . '/graham-campbell/markdown/src'),
     'DummyClasses\\' => array($vendorDir . '/patricktalmadge/bootstrapper/tests/DummyClasses'),
+    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),
     'Bootstrapper\\' => array($vendorDir . '/patricktalmadge/bootstrapper/src/Bootstrapper'),
     'App\\' => array($baseDir . '/app'),
