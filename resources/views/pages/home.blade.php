@@ -44,7 +44,7 @@ Home Page
             @endif
           @endif
 	  
-	  <p>Find our online sales at <a href="http://www.amazon.com/gp/aag/main?ie=UTF8&asin=&isAmazonFulfilled=&isCBA=&marketplaceID=ATVPDKIKX0DER&orderID=&protocol=current&seller=AL9R2AMRMZSTQ&sshmPath=">our Amazon seller page</a>.</p>
+	  <p>Find our online sales at <a class="page-link" href="http://www.amazon.com/gp/aag/main?ie=UTF8&asin=&isAmazonFulfilled=&isCBA=&marketplaceID=ATVPDKIKX0DER&orderID=&protocol=current&seller=AL9R2AMRMZSTQ&sshmPath=">our Amazon seller page</a>.</p>
         </div>
       </div>
     </div>
