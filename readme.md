@@ -114,3 +114,16 @@ You will not, however, need to manually create the tables for the database. All 
 * set up db 'mysql' then
   create database rogue_be;
 * php artisan migrate
+
+
+#### On heroku ####
+
+* Had to get db addon configured (using cleardb)
+
+* change config/database.php to parse our user/db/password from DATABASE_URL env var
+
+* do 'heroku run php artisan migrate' to populate our db with tables (maybe useless?)
+
+* do 'emile@emile-vb:~/dev/roguebooks.com$ mysql -ub7a400e9abf713 -p -hus-cdbr-iron-east-02.cleardb.net heroku_26078f84909573e < database/rogue_be_2015-06-07.sql' to import last db dump into cleardb database (see heroku config output for db username, host, database name and pw)
+
+* now something there at https://roguebooks-website.herokuapp.com/
