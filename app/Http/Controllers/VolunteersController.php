@@ -54,7 +54,7 @@ class VolunteersController extends Controller {
     	function($message)
 		    {
 		    	//$volunteer_email = AdminEmail::where('role', '=', 'volunteer_form');
-			$volunteer_email = "\"emile.snyder@gmail.com\"";
+			$volunteer_email = 'emile.snyder@gmail.com';
 	        $message->from('websitewizardguy@gmail.com');
 	        $message->to($volunteer_email)->subject('RBE Volunteer Form');
 		    });
