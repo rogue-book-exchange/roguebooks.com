@@ -56,43 +56,57 @@
 <h3 class="volunteer-header">Volunteer Assignment Preferences</h3>
 
 <h4>Book Processing</h4>
+@if ($book_processing_group)
 @foreach (unserialize($book_processing_group) as $item)
   {{ $item.", " }}
 @endforeach
+@endif
 
 <h4>Research Analysis</h4>
+@if ($research_analysis_group)
 @foreach (unserialize($research_analysis_group) as $item)
   {{ $item.", " }}
 @endforeach
+@endif
 
 <h4>Front Desk Reception</h4>
+@if ($front_desk_group)
 @foreach (unserialize($front_desk_group) as $item)
   {{ $item.", " }}
 @endforeach
+@endif
 
 <h4>Janitorial</h4>
+@if ($janitorial_group)
 @foreach (unserialize($janitorial_group) as $item)
   {{ $item.", " }}
 @endforeach
+@endif
 
 <h4>Special Projects</h4>
+@if ($special_projects_group)
 @foreach (unserialize($special_projects_group) as $item)
   {{ $item.", " }}
 @endforeach
+@endif
 
 <h4>Book Pickups</h4>
+@if ($book_pickups_group)
 @foreach (unserialize($book_pickups_group) as $item)
   {{ $item.", " }}
 @endforeach
+@endif
 
 <h4>Has Vehicle</h4>
 <p>{{ $has_vehicle }}</p>
 
 <h3 class="volunteer-header">Tell us about yourself</h3>
 <h4>I'm interested in:</h4>
+@if ($personal_interests_group)
 @foreach (unserialize($personal_interests_group) as $item)
   {{ $item.", " }}
 @endforeach
+@endif
 
 <h4>My computer skills include:</h4>
 <p>{{ $computer_skills }}</p>
