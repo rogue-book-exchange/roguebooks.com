@@ -56,11 +56,13 @@
 <h3 class="volunteer-header">Volunteer Assignment Preferences</h3>
 
 <h4>Book Processing</h4>
+<!--
 @if ($book_processing_group)
 @foreach (unserialize($book_processing_group) as $item)
   {{ $item.", " }}
 @endforeach
 @endif
+-->
 
 <h4>Research Analysis</h4>
 @if ($research_analysis_group)
