@@ -43,24 +43,24 @@ class VolunteersController extends Controller {
 	 */
 	public function store(VolunteerFormRequest $request)
 	{
-    $data = $request->all();
-    foreach ($data as $i=>$item) {
-      if (is_array($item)) {
-        $data[$i] = serialize($item);
-      }
-    }
-    Volunteer::create($data);
-    Mail::send('emailtemplates.volunteerform', $data,
-    	function($message)
-		    {
-		    	$volunteer_email = AdminEmail::where('role', '=', 'volunteer_form')->first();
-			//$volunteer_email = 'emile.snyder@gmail.com';
-	        $message->from('postmaster@roguebooks.org');
-	        $message->to($volunteer_email)->subject('RBE Volunteer Form');
-		    });
-    return redirect('/volunteer')->with('message', 'Thank you for your interest in volunteering!');
+        $data = $request->all();
+        foreach ($data as $i=>$item) {
+            if (is_array($item)) {
+                $data[$i] = serialize($item);
+            }
+        }
+        Volunteer::create($data);
+        Mail::send('emailtemplates.volunteerform', $data,
+                   function($message)
+                   {
+                       $volunteer_email = AdminEmail::where('role', '=', 'volunteer_form')->first();
+                       //$volunteer_email = 'emile.snyder@gmail.com';
+                       $message->from('roguebookexchange@gmail.com');
+                       $message->to($volunteer_email->email)->subject('RBE Volunteer Form');
+                   });
+        return redirect('/volunteer')->with('message', 'Thank you for your interest in volunteering!');
 	}
-
+    
 	/**
 	 * Display the specified resource.
 	 *
