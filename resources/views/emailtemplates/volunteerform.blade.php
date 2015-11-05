@@ -55,19 +55,12 @@
 
 <h3 class="volunteer-header">Volunteer Assignment Preferences</h3>
 
-<h4>Book Processing</h4>
-@forelse (unserialize($book_processing_group) as $item)
+<h4>Research Analysis</h4>
+@forelse (unserialize($research_analysis_group) as $item)
   {{ $item.", " }}
 @empty
-  No book processing tasks chosen.
+  No research analysis tasks chosen.
 @endforelse
-
-<h4>Research Analysis</h4>
-@if ($research_analysis_group)
-@foreach (unserialize($research_analysis_group) as $item)
-  {{ $item.", " }}
-@endforeach
-@endif
 
 <h4>Front Desk Reception</h4>
 @if ($front_desk_group)
